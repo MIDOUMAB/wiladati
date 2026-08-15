@@ -39,6 +39,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "797afae2-feab-4f2c-9c27-fea293aa6af6"
+      }
+    },
+    "owner": "benzinama"
   }
 }
