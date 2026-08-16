@@ -5,13 +5,13 @@
 @import "nativewind/theme";
 
 @theme {
-  --color-background: #fff9e3;
+  --color-background: #ffffff;
   --color-foreground: #081126;
   --color-card: #fff8e7;
   --color-muted: #f6eecf;
   --color-muted-foreground: rgba(0, 0, 0, 0.6);
-  --color-primary: #081126;
-  --color-accent: #ea7a53;
+  --color-primary: #210255;
+  --color-accent: #7209cf;
   --color-border: rgba(0, 0, 0, 0.1);
   --color-success: #16a34a;
   --color-destructive: #dc2626;
@@ -71,7 +71,7 @@
   }
 
   .home-avatar {
-    @apply size-16 rounded-full;
+    @apply size-14 rounded-full;
   }
 
   .home-user-name {
@@ -79,7 +79,7 @@
   }
 
   .home-add-icon {
-    @apply size-12;
+    @apply size-8;
   }
 
   .home-balance-card {
