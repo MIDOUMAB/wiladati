@@ -3,14 +3,7 @@ import "@/../global.css";
 import DateTimePickerAndroid from "@react-native-community/datetimepicker";
 import { styled } from "nativewind";
 import { useState } from "react";
-import {
-  Image,
-  Platform,
-  Pressable,
-  Text,
-  TextInput,
-  View,
-} from "react-native";
+import { Image, Platform, Pressable, Text, View } from "react-native";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 import { icons } from "../../../constants/icons";
 
@@ -19,8 +12,8 @@ const SafeAreaView = styled(RNSafeAreaView);
 export default function App() {
   const [showPicker, setShowPicker] = useState(false);
   const [date, setDate] = useState(new Date());
-  const [dateOfBirth, setDateOfBirth] = useState("");
-  const [edd, setEdd] = useState();
+  const [dateOfBirth, setDateOfBirth] = useState<Date | undefined>();
+  const [edd, setEdd] = useState<Date | undefined>();
   const [countWeeks, setCountWeeks] = useState(0);
   const [countDays, setCountDays] = useState(0);
 
@@ -28,8 +21,22 @@ export default function App() {
     setShowPicker(!showPicker);
   };
 
-  const countWeeksAndDays = (startDate, endDate) => {
-    const diffInMs = Math.abs(endDate - startDate);
+  const formatDate = (value?: Date) => {
+    if (!value) {
+      return "";
+    }
+
+    const date = new Date(value);
+
+    let year = date.getFullYear();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+
+    return `${day}-${month}-${year}`;
+  };
+
+  const countWeeksAndDays = (startDate: Date, endDate: Date) => {
+    const diffInMs = Math.abs(endDate.getTime() - startDate.getTime());
     const totalDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 
     const weeks = Math.floor(totalDays / 7);
@@ -38,21 +45,18 @@ export default function App() {
     setCountDays(remainingDays);
 
     const newDate = new Date(startDate);
-    newDate.setFullYear(startDate.getFullYear() + 1);
-    newDate.setMonth(startDate.getMonth() - 3);
-    newDate.setDate(startDate.getDate() + 7);
+    newDate.setDate(newDate.getDate() + 280);
     setEdd(newDate);
   };
 
-  const onChange = ({ type }, selectedDate) => {
-    if (type == "set") {
-      const currentDate = selectedDate;
-      setDate(currentDate);
+  const onChange = ({ type }: { type: string }, selectedDate?: Date) => {
+    if (type === "set" && selectedDate) {
+      setDate(selectedDate);
+      setDateOfBirth(selectedDate);
+      countWeeksAndDays(selectedDate, new Date());
 
       if (Platform.OS === "android") {
         toggleDatePicker();
-        setDateOfBirth(currentDate);
-        countWeeksAndDays(currentDate, new Date());
       }
     } else {
       toggleDatePicker();
@@ -71,36 +75,68 @@ export default function App() {
         </Pressable>
       </View>
 
-      <View className="home-balance-card">
-        <Text className="home-balance-label">Date de premiere</Text>
-        <View className="home-balance-row bg-amber-100">
-          <View>
-            {showPicker && (
-              <DateTimePickerAndroid
-                mode="date"
-                display="spinner"
-                value={date}
-                onChange={onChange}
-                maximumDate={new Date()}
-              />
-            )}
-            <Pressable onPress={toggleDatePicker}>
-              <TextInput
-                className={
-                  "bg-white mt-1 rounded-xl px-3 text-base border-blueColor border-2"
-                }
-                placeholder="dd-mm-yyyy"
-                value={dateOfBirth}
-                onChangeText={setDateOfBirth}
-                placeholderTextColor="#11182744"
-                editable={false}
-              />
-            </Pressable>
+      <View className="overflow-hidden rounded-[28px] bg-foreground shadow-lg shadow-foreground/25">
+        <View className="px-6 pb-5 pt-6">
+          <View className="mb-5 flex-row items-start justify-between">
+            <View className="flex-1 pr-4">
+              <Text className="mb-1 text-xs font-sans-bold uppercase tracking-[1.5px] text-[#F7B267]">
+                Votre calendrier
+              </Text>
+              <Text className="text-2xl font-sans-bold text-white">
+                Suivez votre grossesse
+              </Text>
+            </View>
           </View>
+
+          {showPicker && (
+            <DateTimePickerAndroid
+              mode="date"
+              display="spinner"
+              value={date}
+              onChange={onChange}
+              maximumDate={new Date()}
+            />
+          )}
+
+          <Text className="mb-2 text-sm font-sans-semibold text-white/65">
+            Date des dernières règles
+          </Text>
+          <Pressable
+            onPress={toggleDatePicker}
+            className="flex-row items-center justify-between rounded-2xl border border-accent/50 bg-[#E8E9FF] px-4 py-3.5 active:opacity-80"
+          >
+            <Text className="text-lg font-sans-bold text-foreground">
+              {dateOfBirth ? formatDate(dateOfBirth) : "Choisir une date"}
+            </Text>
+            <Text className="text-sm font-sans-semibold text-accent">
+              Modifier
+            </Text>
+          </Pressable>
         </View>
-        <View className="home-balance-row">
-          <Text className="home-balance-amount">1200</Text>
-          <Text className="home-balance-date">{`${edd}`}</Text>
+
+        <View className="flex-row border-t border-white/10 bg-primary px-6 py-5">
+          <View className="flex-1 border-r border-white/10 pr-4">
+            <Text className="mb-2 text-xs font-sans-semibold uppercase tracking-[1px] text-white/55">
+              Âge gestationnel
+            </Text>
+            {dateOfBirth ? (
+              <Text className="text-lg font-sans-bold text-white">
+                {`${countWeeks} sem. ${countDays} j.`}
+              </Text>
+            ) : (
+              <Text className="text-base font-sans-medium text-white/55">
+                En attente
+              </Text>
+            )}
+          </View>
+          <View className="flex-1 pl-4">
+            <Text className="mb-2 text-xs font-sans-semibold uppercase tracking-[1px] text-white/55">
+              Date prévue de l'accouchement
+            </Text>
+            <Text className="text-lg font-sans-bold text-accent">
+              {edd ? formatDate(edd) : "-- / -- / ----"}
+            </Text>
+          </View>
         </View>
       </View>
 
