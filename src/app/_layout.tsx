@@ -1,9 +1,11 @@
 import "@/../global.css";
 import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { loadSavedLanguage } from "../../lang/i18n";
 
 export default function RootLayout() {
+  const [languageLoaded, setLanguageLoaded] = useState(false);
   const [fontsLoaded] = useFonts({
     "sans-regular": require("../../assets/fonts/PlusJakartaSans-Regular.ttf"),
     "sans-bold": require("../../assets/fonts/PlusJakartaSans-Bold.ttf"),
@@ -14,15 +16,20 @@ export default function RootLayout() {
   });
 
   useEffect(() => {
-    if (fontsLoaded) {
+    loadSavedLanguage().finally(() => setLanguageLoaded(true));
+  }, []);
+
+  useEffect(() => {
+    if (fontsLoaded && languageLoaded) {
       SplashScreen.hideAsync();
     }
-  }, [fontsLoaded]);
+  }, [fontsLoaded, languageLoaded]);
 
-  if (!fontsLoaded) return null;
+  if (!fontsLoaded || !languageLoaded) return null;
 
   return (
-    <Stack initialRouteName="(tabs)">
+    <Stack initialRouteName="onboarding">
+      <Stack.Screen name="onboarding" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
     </Stack>
   );
