@@ -1,128 +1,43 @@
 import { styled } from "nativewind";
-import React from "react";
 import { ScrollView, Text, View } from "react-native";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
+import { useTranslation } from "react-i18next";
+
 const SafeAreaView = styled(RNSafeAreaView);
 
-const Apropos = () => {
+const Bullet = ({ children }: { children: string }) => (
+  <Text className="text-base leading-relaxed text-gray-600">{"\u2022"} {children}</Text>
+);
+
+export default function Apropos() {
+  const { t } = useTranslation();
+
   return (
-    <SafeAreaView>
+    <SafeAreaView className="flex-1">
       <ScrollView contentContainerStyle={{ paddingBottom: 24 }}>
-        <View className="px-5 py-6 space-y-4">
-          {/* Header */}
-          <View className="items-center w-full mb-4">
-            <Text className="text-3xl font-extrabold text-[#6A0DAD] tracking-wide">
-              Wiladati
-            </Text>
-          </View>
-
-          {/* Section Title */}
-          <Text className="text-2xl font-bold text-[#1E3A8A] mb-2 ">
-            À propos de l'application
-          </Text>
-
-          {/* Intro paragraphs */}
-          <Text className="text-base leading-relaxed text-gray-700 ">
-            Bienvenue sur ton application
-          </Text>
-          <Text className="text-base leading-relaxed text-gray-700 ">
-            La première application algérienne dédiée aux femmes enceintes dans
-            leur parcours vers l'accouchement. Cette application a été créée
-            pour répondre au besoin des mamans algériennes d'avoir une source
-            fiable et complète d'informations médicales et psychologiques afin
-            d'être mieux informées, moins anxieuses et soutenues dans les
-            moments les plus sensibles et les plus complexes de leur maternité.
-          </Text>
-          <Text className="text-base leading-relaxed text-gray-700 ">
-            Plus qu'un simple guide pour les mamans, c'est un outil qui :
-          </Text>
-
-          {/* Bulleted points */}
-          <View className="space-y-2 ${pad2}">
-            <Text className="text-base text-gray-600 ">
-              {"\u2022"} Soutient le rôle d'accompagnement essentiel de la
-              sage-femme.
-            </Text>
-            <Text className="text-base text-gray-600 ">
-              {"\u2022"} Sert de support moderne et de référence pour les
-              étudiantes sages-femmes dans leur formation au quotidien.",
-              "aProposNote": "Remarque : Cette application est un support
-              numérique moderne, conçu pour t'accompagner au quotidien. Il est
-              important de souligner qu'elle ne remplace en aucun cas la
-              préparation classique ni ton suivi médical ; il s'agit plutôt d'un
-              outil complémentaire conçu pour améliorer ton expérience et
-              t'apporter un soutien supplémentaire.
-            </Text>
-          </View>
-
-          {/* Note */}
-          <Text className="text-base italic text-gray-500 mt-4 ">
-            Remarque : Cette application est un support numérique moderne, conçu
-            pour t'accompagner au quotidien. Il est important de souligner
-            qu'elle ne remplace en aucun cas la préparation classique ni ton
-            suivi médical ; il s'agit plutôt d'un outil complémentaire conçu
-            pour améliorer ton expérience et t'apporter un soutien
-            supplémentaire.
-          </Text>
-
-          {/* Goals */}
-          <Text className="text-xl font-semibold text-[#1E3A8A] mt-6 mb-2 ">
-            Elle vise a :
-          </Text>
+        <View className="space-y-4 px-5 py-6">
+          <View className="mb-4 items-center"><Text className="text-3xl font-extrabold tracking-wide text-[#6A0DAD]">{t("appName")}</Text></View>
+          <Text className="mb-2 text-2xl font-bold text-[#1E3A8A]">{t("aProposTitle")}</Text>
+          <Text className="text-base leading-relaxed text-gray-700">{t("aProposIntro")}</Text>
+          <Text className="text-base leading-relaxed text-gray-700">{t("aProposIntro2")}</Text>
+          <Text className="text-base leading-relaxed text-gray-700">{t("aProposIntro3")}</Text>
+          <View className="space-y-2"><Bullet>{t("aProposIntro3Pt1")}</Bullet><Bullet>{t("aProposIntro3Pt2")}</Bullet></View>
+          <Text className="mt-4 text-base italic leading-relaxed text-gray-500">{t("aProposNote")}</Text>
+          <Text className="mt-6 mb-2 text-xl font-semibold text-[#1E3A8A]">{t("aProposGoal")}</Text>
           <View className="space-y-2">
-            <Text className="text-base text-gray-600">
-              {"\u2022"} Accompagner les futures mamans dans le suivi détaillé
-              du développement de leur bébé, de la 1ère à la 42ème semaine.
-            </Text>
-            <Text className="text-base text-gray-600">
-              {"\u2022"} Fournir des explications claires et accessibles sur les
-              différentes étapes du travail et de l'accouchement, afin de
-              préparer les futures mamans physiquement et psychologiquement à la
-              naissance.
-            </Text>
-            <Text className="text-base text-gray-600">
-              {"\u2022"} Servir de guide pratique pour identifier les vraies
-              contractions, reconnaître les signes d'alerte ou d'approche, et
-              s'informer sur les stimulateurs d'accouchement ainsi que sur la
-              préparation de la valise de maternité.
-            </Text>
-            <Text className="text-base text-gray-600">
-              {"\u2022"} Guider les nouvelles mamans sur les soins essentiels en
-              post-partum pour favoriser une récupération physique et un
-              bien-être optimal après l'accouchement.
-            </Text>
+            <Bullet>{t("aProposPoint1")}</Bullet><Bullet>{t("aProposPoint2")}</Bullet><Bullet>{t("aProposPoint3")}</Bullet><Bullet>{t("aProposPoint4")}</Bullet>
           </View>
-
-          <View className="flex-1 items-center w-full">
-            <Text className="text-2xl font-extrabold text-[#6A0DAD] tracking-wide mt-5 mb-3">
-              Équipe du projet
-            </Text>
-
-            <Text className="text-base font-semibold text-gray-700 text-center">
-              Conception et Contenu scientifique :
-            </Text>
-            <Text className="text-xl font-semibold text-[#1E3A8A] text-center mb-3">
-              SAYAH Nourhane et BENOUIOUA Raounek
-            </Text>
-
-            <Text className="text-base font-semibold text-gray-700">
-              Développement et Réalisation technique :
-            </Text>
-            <Text className="text-xl font-semibold text-[#1E3A8A] text-center mb-3">
-              BENZINA Mohamed Amine
-            </Text>
-
-            <Text className="text-base font-semibold text-gray-700">
-              Proposition du projet :
-            </Text>
-            <Text className="text-xl font-semibold text-[#1E3A8A] text-center mb-3">
-              BOUTAHRAOUI Mohamed
-            </Text>
+          <View className="mt-5 items-center">
+            <Text className="mb-3 text-2xl font-extrabold tracking-wide text-[#6A0DAD]">{t("Equipe")}</Text>
+            <Text className="text-center text-base font-semibold text-gray-700">{t("EquipeConception")}</Text>
+            <Text className="mb-3 text-center text-xl font-semibold text-[#1E3A8A]">{t("EquipeConceptionNom")}</Text>
+            <Text className="text-center text-base font-semibold text-gray-700">{t("EquipeDéveloppement")}</Text>
+            <Text className="mb-3 text-center text-xl font-semibold text-[#1E3A8A]">{t("EquipeDéveloppementNom")}</Text>
+            <Text className="text-center text-base font-semibold text-gray-700">{t("EquipeProposition")}</Text>
+            <Text className="text-center text-xl font-semibold text-[#1E3A8A]">{t("EquipePropositionNom")}</Text>
           </View>
         </View>
       </ScrollView>
     </SafeAreaView>
   );
-};
-
-export default Apropos;
+}
