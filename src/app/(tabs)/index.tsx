@@ -7,11 +7,13 @@ import { Image, Platform, Pressable, Text, View } from "react-native";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 import { useTranslation } from "react-i18next";
 import { icons } from "../../../constants/icons";
+import { useAppDirection } from "../../hooks/use-app-direction";
 
 const SafeAreaView = styled(RNSafeAreaView);
 
 export default function App() {
   const { t } = useTranslation();
+  const direction = useAppDirection();
   const [showPicker, setShowPicker] = useState(false);
   const [date, setDate] = useState(new Date());
   const [dateOfBirth, setDateOfBirth] = useState<Date | undefined>();
@@ -67,10 +69,10 @@ export default function App() {
 
   return (
     <SafeAreaView className="flex-1 bg-background p-5">
-      <View className="home-header">
-        <View className="home-user">
+      <View className="home-header" style={direction.row}>
+        <View className="home-user" style={direction.row}>
           <Image source={images.avatar} className="home-avatar" />
-          <Text className="home-user-name">{t("welcomeUser")}</Text>
+          <Text className="home-user-name" style={direction.text}>{t("welcomeUser")}</Text>
         </View>
         <Pressable>
           <Image source={icons.add} className="home-add-icon" />
@@ -81,10 +83,10 @@ export default function App() {
         <View className="px-6 pb-5 pt-6">
           <View className="mb-5 flex-row items-start justify-between">
             <View className="flex-1 pr-4">
-              <Text className="mb-1 text-xs font-sans-bold uppercase tracking-[1.5px] text-[#F7B267]">
+              <Text className="mb-1 text-xs font-sans-bold uppercase tracking-[1.5px] text-[#F7B267]" style={direction.text}>
                 {t("calendarTitle")}
               </Text>
-              <Text className="text-2xl font-sans-bold text-white">
+              <Text className="text-2xl font-sans-bold text-white" style={direction.text}>
                 {t("calendarSubtitle")}
               </Text>
             </View>
@@ -100,42 +102,43 @@ export default function App() {
             />
           )}
 
-          <Text className="mb-2 text-sm font-sans-semibold text-white/65">
+          <Text className="mb-2 text-sm font-sans-semibold text-white/65" style={direction.text}>
             {t("deliveryDate")}
           </Text>
           <Pressable
             onPress={toggleDatePicker}
             className="flex-row items-center justify-between rounded-2xl border border-accent/50 bg-[#E8E9FF] px-4 py-3.5 active:opacity-80"
+            style={direction.row}
           >
-            <Text className="text-lg font-sans-bold text-foreground">
+            <Text className="text-lg font-sans-bold text-foreground" style={direction.text}>
               {dateOfBirth ? formatDate(dateOfBirth) : t("chooseDate")}
             </Text>
-            <Text className="text-sm font-sans-semibold text-accent">
+            <Text className="text-sm font-sans-semibold text-accent" style={direction.text}>
               {t("edit")}
             </Text>
           </Pressable>
         </View>
 
-        <View className="flex-row border-t border-white/10 bg-primary px-6 py-5">
+        <View className="flex-row border-t border-white/10 bg-primary px-6 py-5" style={direction.row}>
           <View className="flex-1 border-r border-white/10 pr-4">
-            <Text className="mb-2 text-xs font-sans-semibold uppercase tracking-[1px] text-white/55">
+            <Text className="mb-2 text-xs font-sans-semibold uppercase tracking-[1px] text-white/55" style={direction.text}>
               {t("age")}
             </Text>
             {dateOfBirth ? (
-              <Text className="text-lg font-sans-bold text-white">
+              <Text className="text-lg font-sans-bold text-white" style={direction.text}>
                 {t("weeksDays", { countWeeks, countDays })}
               </Text>
             ) : (
-              <Text className="text-base font-sans-medium text-white/55">
+              <Text className="text-base font-sans-medium text-white/55" style={direction.text}>
                 {t("pending")}
               </Text>
             )}
           </View>
           <View className="flex-1 pl-4">
-            <Text className="mb-2 text-xs font-sans-semibold uppercase tracking-[1px] text-white/55">
+            <Text className="mb-2 text-xs font-sans-semibold uppercase tracking-[1px] text-white/55" style={direction.text}>
               {t("AccTitle")}
             </Text>
-            <Text className="text-lg font-sans-bold text-accent">
+            <Text className="text-lg font-sans-bold text-accent" style={direction.text}>
               {edd ? formatDate(edd) : "-- / -- / ----"}
             </Text>
           </View>

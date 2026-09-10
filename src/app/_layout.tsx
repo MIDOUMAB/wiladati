@@ -30,7 +30,9 @@ export default function RootLayout() {
   return (
     <Stack initialRouteName="onboarding">
       <Stack.Screen name="onboarding" options={{ headerShown: false }} />
+      <Stack.Screen name="(auth)" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="(preparation)" options={{ headerShown: false }} />
     </Stack>
   );
 }

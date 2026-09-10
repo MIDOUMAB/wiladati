@@ -13,11 +13,11 @@
   "edit": "Modifier",
   "pending": "En attente",
   "preparationIntro": "Trouvez des conseils pour chaque étape de votre parcours.",
-  "prepBeforeTitle": "Avant la grossesse",
+  "prepBeforeTitle": "Avant l'accouchement",
   "prepBeforeDescription": "Préparez votre corps et votre esprit",
-  "prepDuringTitle": "Pendant la grossesse",
+  "prepDuringTitle": "Pendant l'accouchement",
   "prepDuringDescription": "Un accompagnement semaine après semaine",
-  "prepAfterTitle": "Après la grossesse",
+  "prepAfterTitle": "Après l'accouchement",
   "prepAfterDescription": "Prenez soin de vous et de votre bébé",
   "signInTitle": "Connecter",
   "email": "Email",
@@ -44,18 +44,15 @@
   "edd": "EDD : {{date}}",
   "remoteAssistanceTitle": "Votre assistance à distance",
   "remoteAssistanceDesc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-  "mm":"mm",
-  "g":"g",
-
-
+  "mm": "mm",
+  "g": "g",
 
   "appTab1": "Principale",
   "appTab2": "Préparation",
   "appTab3": "Guide",
   "appTab4": "À propos",
-  "voirPlus":"Voir plus",
-  "AccTitle":"Date prévue de l'accouchement",
-
+  "voirPlus": "Voir plus",
+  "AccTitle": "Date prévue de l'accouchement",
 
   "appName": "Wiladati",
   "aProposTitle": "À propos de l'application",
@@ -72,16 +69,13 @@
   "aProposPoint3": "Servir de guide pratique pour identifier les vraies contractions, reconnaître les signes d'alerte ou d'approche, et s'informer sur les stimulateurs d'accouchement ainsi que sur la préparation de la valise de maternité.",
   "aProposPoint4": "Guider les nouvelles mamans sur les soins essentiels en post-partum pour favoriser une récupération physique et un bien-être optimal après l'accouchement.",
 
-  "Equipe":"Équipe du projet",
-  "EquipeConception":"Conception et Contenu scientifique :",
-  "EquipeConceptionNom":"SAYAH Nourhane et BENOUIOUA Raounek",
-  "EquipeDéveloppement":"Développement et Réalisation technique :",
-  "EquipeDéveloppementNom":"BENZINA Mohamed Amine",
-  "EquipeProposition":"Proposition du projet :",
-  "EquipePropositionNom":"BOUTAHRAOUI Mohamed",
-
-
-
+  "Equipe": "Équipe du projet",
+  "EquipeConception": "Conception et Contenu scientifique :",
+  "EquipeConceptionNom": "SAYAH Nourhane et BENOUIOUA Raounek",
+  "EquipeDéveloppement": "Développement et Réalisation technique :",
+  "EquipeDéveloppementNom": "BENZINA Mohamed Amine",
+  "EquipeProposition": "Proposition du projet :",
+  "EquipePropositionNom": "BOUTAHRAOUI Mohamed",
 
   "todayDate": "Wed, 18 Sept",
   "searchPlaceholder": "Rechercher...",
@@ -89,66 +83,66 @@
   "subjectDuring": "La préparation Pendant l'accouchement",
   "subjectAfter": "La préparation Après l'accouchement",
 
-  "avantAccouchTitle": "La préparation Avant l'accouchement", 
+  "avantAccouchTitle": "La préparation Avant l'accouchement",
   "avantAccouchIntro": "Chère amie, à partir de la 32 semaine de grossesse, c'est-à-dire à la fin du septième mois, vous pouvez commencer à vous préparer mentalement et physiquement pour vivre votre accouchement en toute conscience, sérénité et sécurité.",
-  
+
   "avantAccouchMentale": "La préparation mentale",
   "avantAccouchPhysique": "La préparation physique",
   "avantAccouchFear": "La Peur",
   "avantAccouchRelaxation": "Relaxation & Respiration",
-  "avantAccouchFood": "Alimentation", 
-  "avantAccouchSport": "Sport", 
+  "avantAccouchFood": "Alimentation",
+  "avantAccouchSport": "Sport",
   "avantAccouchPartenaire": "Rôle du partenaire",
-  "avantAccouchMassage": "Massage du périnée", 
+  "avantAccouchMassage": "Massage du périnée",
   "avantAccouchStimulateur": "Stimulateurs de l'accouchement",
 
-  "fearTitle": "La peur", 
-  "fearIntro1": "C'est une réaction courante et naturelle, en particulier chez les femmes qui vivent cette expérience pour la première fois. Cette peur est due à l'inquiétude liée à la douleur ou à l'inconnu.", 
-  "fearIntro2": "Mais vous pouvez la surmonter en :", 
+  "fearTitle": "La peur",
+  "fearIntro1": "C'est une réaction courante et naturelle, en particulier chez les femmes qui vivent cette expérience pour la première fois. Cette peur est due à l'inquiétude liée à la douleur ou à l'inconnu.",
+  "fearIntro2": "Mais vous pouvez la surmonter en :",
   "fearAdvice1": " apprenant tout ce qu'il y a à savoir sur l'accouchement. Lorsque vous saurez ce qui va se passer, vous vous sentirez rassurée.",
-  "fearAdvice1Pt1": "Regardez des vidéos informatives fiables.", 
-  "fearAdvice1Pt2": "Lisez des livres ou des articles sur les différentes étapes de l'accouchement.", 
-  "fearAdvice1Pt3": "Suivez des sages-femmes ou des médecins qui expliquent les choses en termes simples.", 
-  "fearAdvice1Pt4": "Suivez un cours de préparation à l'accouchement, même à distance.", 
-  "fearAdvice2": "Parlez de vos craintes au lieu de les refouler, avec votre mari, votre mère ou une proche qui a vécu une expérience positive.", 
-  "fearAdvice3": "N'écoutez pas les expériences négatives effrayantes, mais concentrez-vous sur des sources fiables.", 
-  "fearAdvice4": "Cessez d'avoir peur de l'inconnu, car tout est prédestiné 'Que Dieu nous protège'.", 
+  "fearAdvice1Pt1": "Regardez des vidéos informatives fiables.",
+  "fearAdvice1Pt2": "Lisez des livres ou des articles sur les différentes étapes de l'accouchement.",
+  "fearAdvice1Pt3": "Suivez des sages-femmes ou des médecins qui expliquent les choses en termes simples.",
+  "fearAdvice1Pt4": "Suivez un cours de préparation à l'accouchement, même à distance.",
+  "fearAdvice2": "Parlez de vos craintes au lieu de les refouler, avec votre mari, votre mère ou une proche qui a vécu une expérience positive.",
+  "fearAdvice3": "N'écoutez pas les expériences négatives effrayantes, mais concentrez-vous sur des sources fiables.",
+  "fearAdvice4": "Cessez d'avoir peur de l'inconnu, car tout est prédestiné 'Que Dieu nous protège'.",
 
-  "relaxTitle": "Relaxation Et Respiration", 
-  "relaxIntro1": "La respiration profonde favorise :", 
-  "relaxIntro1Pt1": "la relaxation et atténue l'anxiété", 
+  "relaxTitle": "Relaxation Et Respiration",
+  "relaxIntro1": "La respiration profonde favorise :",
+  "relaxIntro1Pt1": "la relaxation et atténue l'anxiété",
   "relaxIntro1Pt2": "L'apport de l'oxygène au bébé au moment de la contraction utérine afin d'éviter la souffrance fœtale",
   "relaxIntro1Pt3": "Elle permet à la femme enceinte de soulager la douleur et prendre attention à sa manière de respiration",
   "relaxIntro1Pt4": "Elle nourrit le muscle utérin et améliore son fonctionnement",
   "relaxIntro1Pt5": "Prévenir les prolapsus",
   "relaxIntro1Pt6": "Préserver le périnée",
   "relaxIntro1Pt7": "La relaxation régulière permet au corps et à l'esprit de retrouver leur calme",
-  "relaxIntro2": "Chère amie, voici ce que vous devez faire :", 
-  "relaxStep1": "Pratiquez quotidiennement des exercices de respiration profonde", 
-  "relaxStep1Pt1": "Posez votre main sur votre ventre et fermez les yeux.", 
-  "relaxStep1Pt2": "Inspirez profondément par le nez pendant 4 secondes et imaginez-vous en train de sentir l'odeur de votre futur bébé, tout en gonflant votre ventre.", 
-  "relaxStep1Pt3": "Retenez votre respiration pendant encore 4 secondes.", 
-  "relaxStep1Pt4": "Expirez lentement par la bouche pendant 6 secondes en vidant vos poumons.", 
-  "relaxStep1Pt5": "Répétez l'exercice 5 à 10 fois par jour", 
-  "relaxStep2": "Écoutez le Coran ou les sons de la nature", 
+  "relaxIntro2": "Chère amie, voici ce que vous devez faire :",
+  "relaxStep1": "Pratiquez quotidiennement des exercices de respiration profonde",
+  "relaxStep1Pt1": "Posez votre main sur votre ventre et fermez les yeux.",
+  "relaxStep1Pt2": "Inspirez profondément par le nez pendant 4 secondes et imaginez-vous en train de sentir l'odeur de votre futur bébé, tout en gonflant votre ventre.",
+  "relaxStep1Pt3": "Retenez votre respiration pendant encore 4 secondes.",
+  "relaxStep1Pt4": "Expirez lentement par la bouche pendant 6 secondes en vidant vos poumons.",
+  "relaxStep1Pt5": "Répétez l'exercice 5 à 10 fois par jour",
+  "relaxStep2": "Écoutez le Coran ou les sons de la nature",
   "relaxStep3": "Programmez votre esprit en prononçant des affirmations positives. Exemple : ",
   "relaxStep3Pt1": "'Je vais rencontrer mon petit bout que j'ai attendu pendant neuf mois'",
   "relaxStep3Pt2": "'Chaque respiration que je prends me calme et me prépare à l'accouchement '",
   "relaxStep3Pt3": "'Dieu a créé mon corps et l'a conçu parfaitement pour accomplir cette tâche'",
   "relaxStep3Pt4": "'Chaque contraction me rapproche de rencontrer mon bébé'",
 
-  "PartenaireTitle": "Rôle du partenaire", 
-  "PartenaireIntro": "Ton soutien et ton amour 🤍", 
+  "PartenaireTitle": "Rôle du partenaire",
+  "PartenaireIntro": "Ton soutien et ton amour 🤍",
   "PartenairePt1Title": "Tu n'es pas seule : ",
-  "PartenairePt1": "Ton mari est là pour toi. Il est ton épaule pour te reposer et ta force pour avancer.", 
+  "PartenairePt1": "Ton mari est là pour toi. Il est ton épaule pour te reposer et ta force pour avancer.",
   "PartenairePt2Title": "Un cocon de douceur : ",
-  "PartenairePt2": "Avec ses petits mots et ses câlins, il crée autour de toi un monde de sécurité et de paix.", 
+  "PartenairePt2": "Avec ses petits mots et ses câlins, il crée autour de toi un monde de sécurité et de paix.",
   "PartenairePt3Title": "Ton bonheur est important : ",
-  "PartenairePt3": "Quand tu te sens aimée et protégée, tu deviens plus forte pour accueillir ton bébé avec calme.", 
+  "PartenairePt3": "Quand tu te sens aimée et protégée, tu deviens plus forte pour accueillir ton bébé avec calme.",
   "PartenairePt4Title": "Des gestes simples : ",
   "PartenairePt4": "Il t'écoute quand tu as peur, il te rassure et il t'aide chaque jour avec amour.",
   "PartenairePt5Title": "Une belle aventure à deux :  ",
-  "PartenairePt5": "Sa présence transforme cette attente en un souvenir magique que vous partagez ensemble.", 
+  "PartenairePt5": "Sa présence transforme cette attente en un souvenir magique que vous partagez ensemble.",
   "PartenairePt6Title": "Amour et complicité : ",
   "PartenairePt6": "Les rapports intimes ne sont pas interdits ; au contraire, c'est un lien tendre qui vous rapproche et t’apporte bien-être et apaisement.",
 
@@ -161,117 +155,116 @@
   "foodPoint5": "Évitez les sucres et les boissons gazeuses.",
   "foodPoint6": "La consommation de tisanes excessive (cannelle, thym, etc.) peut provoquer des contractions utérines fortes et inefficaces sur le col. Attention, ma chère, en consommer sans avis médical peut causer de graves complications. Il est donc impératif de toujours consulter votre médecin ou une sage femme pour qu'il valide la quantité adaptée à votre situation.",
 
-  "sportTitle": "sport", 
+  "sportTitle": "sport",
   "sportKeigelTitle": "Exercices de Kegel",
-  "sportIntro1": "La pratique d'un sport pendant la grossesse renforce les muscles pelviens et améliore l'aptitude physique générale, ce qui facilite l'accouchement, mais uniquement en l'absence de contre-indications médicales. Veillez donc à toujours consulter votre médecin.", 
-  "sportIntro2": "Voici quelques exercices utiles, ma chère.", 
-   
-  "sportWalkTitle": "La marche", 
-  "sportWalkIntro": "C'est l'un des meilleurs sports pour les femmes enceintes, y compris celles qui ne font pas habituellement d'exercice physique. La marche est bénéfique pour :", 
-  "sportWalkPoint1": "Renforcer les muscles pelviens", 
-  "sportWalkPoint2": "Favoriser la circulation sanguine", 
-  "sportWalkPoint3": "Stimuler les contractions naturelles", 
-  "sportWalkPoint4": "Préparer la position du fœtus à l'accouchement", 
-  "sportWalkPoint5": "Améliorer l'humeur", 
-  "sportSwimTitle": "La natation", 
-  "sportSwimIntro": "C'est un sport adapté et peu fatigant pour le corps de la femme et présente les avantages suivants :", 
-  "sportSwimPoint1": "Elle soulage les maux de dos et la lourdeur abdominale", 
-  "sportSwimPoint2": "Elle aide à se détendre et à bien dormir", 
+  "sportIntro1": "La pratique d'un sport pendant la grossesse renforce les muscles pelviens et améliore l'aptitude physique générale, ce qui facilite l'accouchement, mais uniquement en l'absence de contre-indications médicales. Veillez donc à toujours consulter votre médecin.",
+  "sportIntro2": "Voici quelques exercices utiles, ma chère.",
 
-  "sportSquatsTitle": "Les squats", 
-  "sportSquatsIntro": "Cette position aide à ouvrir le bassin, à renforcer ses muscles et à favoriser la descente du fœtus.", 
+  "sportWalkTitle": "La marche",
+  "sportWalkIntro": "C'est l'un des meilleurs sports pour les femmes enceintes, y compris celles qui ne font pas habituellement d'exercice physique. La marche est bénéfique pour :",
+  "sportWalkPoint1": "Renforcer les muscles pelviens",
+  "sportWalkPoint2": "Favoriser la circulation sanguine",
+  "sportWalkPoint3": "Stimuler les contractions naturelles",
+  "sportWalkPoint4": "Préparer la position du fœtus à l'accouchement",
+  "sportWalkPoint5": "Améliorer l'humeur",
+  "sportSwimTitle": "La natation",
+  "sportSwimIntro": "C'est un sport adapté et peu fatigant pour le corps de la femme et présente les avantages suivants :",
+  "sportSwimPoint1": "Elle soulage les maux de dos et la lourdeur abdominale",
+  "sportSwimPoint2": "Elle aide à se détendre et à bien dormir",
+
+  "sportSquatsTitle": "Les squats",
+  "sportSquatsIntro": "Cette position aide à ouvrir le bassin, à renforcer ses muscles et à favoriser la descente du fœtus.",
   "sportSquatsPoint1": "Choisis un endroit stable et un appui solide (chaise ou table) si tu te sens déséquilibrée",
   "sportSquatsPoint2": "Commence par une petite profondeur, puis continue progressivement en fonction de ton état.",
   "sportSquatsPoint3": "Vous pouvez faire cet exercice en fonction de vos capacités ( mais de préférence au minimum 5 squats par jour ).",
   "sportSquatsPoint4": "Arrêtez immédiatement si vous ressentez : des douleurs dorsales ou pelviennes, des étourdissements ou un essoufflement",
 
-  "sportBallTitle": "Les exercices avec ballon en caoutchouc", 
-  "sportBallIntro": "Ils comptent parmi les meilleurs exercices pour les femmes enceintes, en particulier au cours des derniers mois, et contribuent à :", 
-  "sportBallPoint1": "Soulager les douleurs dans le bas du dos et les hanches", 
-  "sportBallPoint2": "Améliorer la position du fœtus", 
-  "sportBallPoint3": "Renforcer les muscles du bassin", 
-  "sportBallPoint4": "Faciliter l'accouchement naturel", 
+  "sportBallTitle": "Les exercices avec ballon en caoutchouc",
+  "sportBallIntro": "Ils comptent parmi les meilleurs exercices pour les femmes enceintes, en particulier au cours des derniers mois, et contribuent à :",
+  "sportBallPoint1": "Soulager les douleurs dans le bas du dos et les hanches",
+  "sportBallPoint2": "Améliorer la position du fœtus",
+  "sportBallPoint3": "Renforcer les muscles du bassin",
+  "sportBallPoint4": "Faciliter l'accouchement naturel",
   "sportBallExample": "Exemple:",
-   
-  "sportBallEx1Title": "Asseyez-vous et bougez vers l'avant et vers l'arrière :", 
-  "sportBallEx1Point1": "Asseyez-vous sur le ballon et écartez les jambes.", 
-  "sportBallEx1Point2": "Posez vos mains sur vos jambes.", 
-  "sportBallEx1Point3": "Bougez lentement le bassin vers l'avant et vers l'arrière.", 
-  "sportBallEx1Point4": "Vous pouvez le faire avec l'aide d'une autre personne", 
 
-  "sportBallEx2Title": "Rotation circulaire du bassin :", 
-  "sportBallEx2Text": "Maintenant, bougez votre bassin en cercles (droite - gauche)", 
+  "sportBallEx1Title": "Asseyez-vous et bougez vers l'avant et vers l'arrière :",
+  "sportBallEx1Point1": "Asseyez-vous sur le ballon et écartez les jambes.",
+  "sportBallEx1Point2": "Posez vos mains sur vos jambes.",
+  "sportBallEx1Point3": "Bougez lentement le bassin vers l'avant et vers l'arrière.",
+  "sportBallEx1Point4": "Vous pouvez le faire avec l'aide d'une autre personne",
 
-  "sportBallEx3Title": "Étirement vers l'avant :", 
-  "sportBallEx3Point1": "Placez le ballon devant vous, mettez-vous à genoux et posez vos mains dessus", 
+  "sportBallEx2Title": "Rotation circulaire du bassin :",
+  "sportBallEx2Text": "Maintenant, bougez votre bassin en cercles (droite - gauche)",
+
+  "sportBallEx3Title": "Étirement vers l'avant :",
+  "sportBallEx3Point1": "Placez le ballon devant vous, mettez-vous à genoux et posez vos mains dessus",
   "sportBallEx3Point2": "Penchez-vous vers l'avant en vous appuyant dessus pour détendre votre dos",
 
-  "sportSquatsBallTitle": "Squats avec ballon", 
-  "sportSquatsBallEx1": "Appuyez votre dos contre un mur et placez le ballon entre votre dos et le mur.", 
-  "sportSquatsBallEx2": "Descendez lentement en position de demi-squat, puis remontez.", 
+  "sportSquatsBallTitle": "Squats avec ballon",
+  "sportSquatsBallEx1": "Appuyez votre dos contre un mur et placez le ballon entre votre dos et le mur.",
+  "sportSquatsBallEx2": "Descendez lentement en position de demi-squat, puis remontez.",
 
   "sportSquatsBallAstuce": "Astuce :",
   "sportSquatsBallAstuceIntro": "Le ballon de gym est bien plus qu’un accessoire de grossesse : c’est un outil durable et très économique. Pour les plus jeunes, il aide à améliorer l’équilibre et la concentration. À l'âge adulte, il est parfait pour corriger la posture et soulager les tensions du dos. Enfin, avec l'âge, il permet de renforcer les articulations en douceur et de prévenir les chutes en travaillant la stabilité. C’est un investissement simple pour rester en forme tout au long de la vie !",
 
-  "sportKegelTitle": "Exercices de Kegel", 
-  "sportKegelIntro": "Il s'agit d'exercices simples qui permettent de renforcer les muscles du plancher pelvien (les muscles responsables du contrôle de la vessie, de l'utérus et des intestins). Pour cela, identifiez les muscles du plancher pelvien en imaginant que vous retenez votre urine.", 
+  "sportKegelTitle": "Exercices de Kegel",
+  "sportKegelIntro": "Il s'agit d'exercices simples qui permettent de renforcer les muscles du plancher pelvien (les muscles responsables du contrôle de la vessie, de l'utérus et des intestins). Pour cela, identifiez les muscles du plancher pelvien en imaginant que vous retenez votre urine.",
   "sportKegelBenefitsTitle": "Les avantages des exercices de Kegel",
-  "sportKegelBenefit1":"Ils aident à contrôler les poussées",
-  "sportKegelBenefit2":"renforcent les muscles qui s'affaiblissent après la grossesse ou avec l'âge",
-  "sportKegelBenefit3":"améliorent la relation sexuelle car ils renforcent les muscles vaginaux",
-  "sportKegelBenefit4":"facilitent l'accouchement naturel si vous commencez à les pratiquer pendant l'accouchement ",
-  "sportKegelBenefit5":"Ils aident à la récupération après l'accouchement",
-  "sportKegelBenefit6":"aident à contrôler la miction et à prévenir l'incontinence urinaire",
-  "sportKegelNote1":"Pour cela, identifiez les muscles du plancher pelvien en imaginant que vous retenez votre urine",
+  "sportKegelBenefit1": "Ils aident à contrôler les poussées",
+  "sportKegelBenefit2": "renforcent les muscles qui s'affaiblissent après la grossesse ou avec l'âge",
+  "sportKegelBenefit3": "améliorent la relation sexuelle car ils renforcent les muscles vaginaux",
+  "sportKegelBenefit4": "facilitent l'accouchement naturel si vous commencez à les pratiquer pendant l'accouchement ",
+  "sportKegelBenefit5": "Ils aident à la récupération après l'accouchement",
+  "sportKegelBenefit6": "aident à contrôler la miction et à prévenir l'incontinence urinaire",
+  "sportKegelNote1": "Pour cela, identifiez les muscles du plancher pelvien en imaginant que vous retenez votre urine",
 
-
-  "sportKegelEx":"Les meilleurs exercices de Kegel pour les femmes enceintes pour faciliter l'accouchement: ",
+  "sportKegelEx": "Les meilleurs exercices de Kegel pour les femmes enceintes pour faciliter l'accouchement: ",
   "sportKegelEx1Title": "Exercice Tailor Press ",
-  "sportKegelEx1Point1":"Asseyez-vous sur le sol, en gardant ton dos droit",
-  "sportKegelEx1Point2":"Joignez la plante des pieds",
-  "sportKegelEx1Point3":"Placez vos mains sous vos chevilles et tirez-les légèrement vers votre corps",
-  "sportKegelEx1Point4":"Inspirez en appuyant légèrement sur vos genoux vers le bas",
-  "sportKegelEx1Point5":"Contractez les muscles du plancher pelvien pendant environ 10 secondes",
-  "sportKegelEx1Point6":"Expirez maintenant en relâchant les muscles",
-  "sportKegelEx1Benefits":"Cet exercice vous aide à:",
-  "sportKegelEx1Benefits1":"Réduire les douleurs pelviennes et lombaires",
-  "sportKegelEx1Benefits2":"améliorer la circulation sanguine ",
-  "sportKegelEx1Benefits3":"Donner un peu plus d'espace au fœtus en déplaçant l'utérus vers l'avant",
+  "sportKegelEx1Point1": "Asseyez-vous sur le sol, en gardant ton dos droit",
+  "sportKegelEx1Point2": "Joignez la plante des pieds",
+  "sportKegelEx1Point3": "Placez vos mains sous vos chevilles et tirez-les légèrement vers votre corps",
+  "sportKegelEx1Point4": "Inspirez en appuyant légèrement sur vos genoux vers le bas",
+  "sportKegelEx1Point5": "Contractez les muscles du plancher pelvien pendant environ 10 secondes",
+  "sportKegelEx1Point6": "Expirez maintenant en relâchant les muscles",
+  "sportKegelEx1Benefits": "Cet exercice vous aide à:",
+  "sportKegelEx1Benefits1": "Réduire les douleurs pelviennes et lombaires",
+  "sportKegelEx1Benefits2": "améliorer la circulation sanguine ",
+  "sportKegelEx1Benefits3": "Donner un peu plus d'espace au fœtus en déplaçant l'utérus vers l'avant",
 
   "sportKegelEx2Title": " Exercice Garland pose   ",
-  "sportKegelEx2Point1":"Asseyez-vous par terre sur vos pieds et non sur vos fesses, en vous penchant légèrement vers l'avant.",
-  "sportKegelEx2Point2":"Contractez les muscles du bas du bassin, comme si vous essayiez d'empêcher l'urine de sortir",
-  "sportKegelEx2Point3":"Une fois que vous avez réussi à contracter les muscles du bassin, maintenez-les contractés pendant 10 secondes, puis relâchez-les pendant 10 secondes, et ainsi de suite",
-  "sportKegelEx2Point4":"Répétez cet exercice 10 à 15 fois par jour.",
+  "sportKegelEx2Point1": "Asseyez-vous par terre sur vos pieds et non sur vos fesses, en vous penchant légèrement vers l'avant.",
+  "sportKegelEx2Point2": "Contractez les muscles du bas du bassin, comme si vous essayiez d'empêcher l'urine de sortir",
+  "sportKegelEx2Point3": "Une fois que vous avez réussi à contracter les muscles du bassin, maintenez-les contractés pendant 10 secondes, puis relâchez-les pendant 10 secondes, et ainsi de suite",
+  "sportKegelEx2Point4": "Répétez cet exercice 10 à 15 fois par jour.",
   "sportKegelEx2Benefits": "Cet exercice aide à prévenir les infections urinaires et les dysfonctionnements du plancher pelvien pendant la grossesse.",
 
   "sportKegelEx3Title": "Exercice Tailor sit   ",
-  "sportKegelEx3Point1":"Commencez par vous asseoir par terre en gardant le dos droit.",
-  "sportKegelEx3Point2":"Rassemblez la plante des pieds vers l'intérieur.",
-  "sportKegelEx3Point3":"Pen chez-vous doucement vers l'avant jusqu'à ce que vous sentiez un léger étirement dans les muscles des hanches et des cuisses, tout en gardant le dos droit.",
-  "sportKegelEx3Point4":"Ne pas appuyer sur les jambes avec les mains.",
-  "sportKegelEx3Point5":"Contracter les muscles du bassin et compter jusqu'à 5.",
-  "sportKegelEx3Point6":"Se détendre, et ainsi de suite.",
-  "sportKegelEx3Benefits":"Aide à renforcer les muscles du bassin",
+  "sportKegelEx3Point1": "Commencez par vous asseoir par terre en gardant le dos droit.",
+  "sportKegelEx3Point2": "Rassemblez la plante des pieds vers l'intérieur.",
+  "sportKegelEx3Point3": "Pen chez-vous doucement vers l'avant jusqu'à ce que vous sentiez un léger étirement dans les muscles des hanches et des cuisses, tout en gardant le dos droit.",
+  "sportKegelEx3Point4": "Ne pas appuyer sur les jambes avec les mains.",
+  "sportKegelEx3Point5": "Contracter les muscles du bassin et compter jusqu'à 5.",
+  "sportKegelEx3Point6": "Se détendre, et ainsi de suite.",
+  "sportKegelEx3Benefits": "Aide à renforcer les muscles du bassin",
 
-  "sportKegelEx4Title":"Exercice Reclined cobber Pose",
+  "sportKegelEx4Title": "Exercice Reclined cobber Pose",
   "sportKegelEx4Intro": "Une forte pression s'exerce sur le bas du bassin pendant la grossesse, en particulier au cours du dernier mois. Cet exercice aide à: ",
-  "sportKegelEx4Benefits1":"Détendre les muscles et réduire la tension qui s'exerce sur eux  ",
-  "sportKegelEx4Benefits2":"Réduire la pression dans le bas du corps",
-  "sportKegelEx4Point1":"Utilisez un coussin et un gros bloc pour soutenir votre corps, puis asseyez-vous confortablement, le dos droit.",
-  "sportKegelEx4Point2":"Rapprochez la plante de vos  pieds l'une vers l'autre.",
-  "sportKegelEx4Point3":"Puis pliez les jambes vers l'intérieur.",
-  "sportKegelEx4Point4":"Appuyez légèrement sur les genoux vers le bas.",
-  "sportKegelEx4Point5":"Maintenez la position jusqu'à ce que vous vous sentiez à l'aise.",
-  
-  "sportKegelNote": "Remarque : plus vous contractez les muscles longtemps, plus ils deviennent forts.", 
-  "sportKegelEx4Note":"' Il n'est peut-être pas facile de maintenir les positions, de continuer l'exercice et d'atteindre le temps standard, mais vous devez maintenir les positions en fonction du confort de votre corps, puis augmenter progressivement avec le temps, afin de ne pas forcer votre corps.  '",
+  "sportKegelEx4Benefits1": "Détendre les muscles et réduire la tension qui s'exerce sur eux  ",
+  "sportKegelEx4Benefits2": "Réduire la pression dans le bas du corps",
+  "sportKegelEx4Point1": "Utilisez un coussin et un gros bloc pour soutenir votre corps, puis asseyez-vous confortablement, le dos droit.",
+  "sportKegelEx4Point2": "Rapprochez la plante de vos  pieds l'une vers l'autre.",
+  "sportKegelEx4Point3": "Puis pliez les jambes vers l'intérieur.",
+  "sportKegelEx4Point4": "Appuyez légèrement sur les genoux vers le bas.",
+  "sportKegelEx4Point5": "Maintenez la position jusqu'à ce que vous vous sentiez à l'aise.",
 
-  "sportButterflyTitle": "Exercice du papillon", 
-  "sportButterflyIntro": "Il s'agit d'un exercice simple qui : ", 
+  "sportKegelNote": "Remarque : plus vous contractez les muscles longtemps, plus ils deviennent forts.",
+  "sportKegelEx4Note": "' Il n'est peut-être pas facile de maintenir les positions, de continuer l'exercice et d'atteindre le temps standard, mais vous devez maintenir les positions en fonction du confort de votre corps, puis augmenter progressivement avec le temps, afin de ne pas forcer votre corps.  '",
+
+  "sportButterflyTitle": "Exercice du papillon",
+  "sportButterflyIntro": "Il s'agit d'un exercice simple qui : ",
   "sportButterflyBenefits1": "Ouvre les articulations du bassin et renforce leur souplesse",
-  "sportButterflyBenefits2": "Il aide à soulager les douleurs lombaires.", 
-  "sportButterflyBenefits3": "Il active la circulation sanguine dans la région du bassin et des cuisses.", 
+  "sportButterflyBenefits2": "Il aide à soulager les douleurs lombaires.",
+  "sportButterflyBenefits3": "Il active la circulation sanguine dans la région du bassin et des cuisses.",
   "sportButterflyBenefits4": "Il soulage les crampes",
   "sportButterflyHow": "Comment faire l'exercice ? ",
   "sportButterflyPoint1": "Commencez par vous asseoir par terre, le dos droit.",
@@ -297,7 +290,7 @@
   "perinealMassageInternalTitle": "Massage interne du périnée",
   "perinealMassageInternalStep1": "Insérez votre pouce dans toute sa longueur dans le vagin et appliquez une pression alternée sur les deux côtés du périnée dans un mouvement qui ressemble à la lettre u.",
   "perinealMassageInternalNote": "Remarque : Vous pouvez visionner des vidéos pour en savoir plus sur la technique de massage",
-  
+
   "stimulatorsTitle": "Stimulateurs de l'accouchement",
   "stimulatorsIntro": "Voici quelques mesures que vous pouvez prendre pour stimuler le déclenchement du travail au début de votre neuvième mois :",
   "stimulatorsSportTitle": "Sport",
@@ -311,7 +304,7 @@
   "stimulatorsBathEx": "L'eau soulage le stress et détend les muscles du bassin et de l'utérus, Mais attention, l'eau doit être tiède, pas chaude.",
   "stimulatorsPositionsTitle": "Différentes positions pendant le travail :",
   "stimulatorsPositionsEx": "Ces positions sont confortables pour votre corps et sont également utiles pendant le travail",
-  
+
   "contractionsDiffTitle": "La différence entre les vraies et fausses contractions",
   "contractionsFalse": "Faux travail",
   "contractionsTrue": "Vrai travail",
@@ -325,39 +318,38 @@
   "contractionsTrue4": "Il ne disparaît pas du tout.",
 
   "signsTitle": "Signes d'approche de l'accouchement",
-  "signsEx1Title":"Sensation de légèreté :",
+  "signsEx1Title": "Sensation de légèreté :",
   "signsEx1": "Due à la descente du fœtus dans le bassin.",
-  "signsEx2Title":"Douleurs dorsales :",
+  "signsEx2Title": "Douleurs dorsales :",
   "signsEx2": "Normales en raison de la descente du fœtus dans le bassin et de la pression qu'il exerce sur les vertèbres.",
-  "signsEx3Title":"",
+  "signsEx3Title": "",
   "signsEx3": "Nausées, vomissements, diarrhée, dus aux changements Hormonale et augmentation des hormones de l'accouchement qui affectent le système digestif.",
-  "signsEx4Title":"Descente du bouchon muqueux en raison de la dilatation du col de l'utérus en préparation à l'accouchement :",
+  "signsEx4Title": "Descente du bouchon muqueux en raison de la dilatation du col de l'utérus en préparation à l'accouchement :",
   "signsEx4": "Sécrétion muqueuse épaisse ressemblant à du gel, (qui peut être blanche, jaune, brune ou mélangée à un peu de sang, sa chute n'est pas inquiétante si elle n'est pas accompagnée d'autres symptômes de l'accouchement.",
-  "signsEx5Title":"Contractions régulières :",
+  "signsEx5Title": "Contractions régulières :",
   "signsEx5": "Toutes les dix minutes ou moins, qui ne disparaissent ni lors du mouvement, ni au repos.",
-  "signsEx6Title":"Rupture de la poche des eaux, c'est-à-dire perte des eaux :",
+  "signsEx6Title": "Rupture de la poche des eaux, c'est-à-dire perte des eaux :",
   "signsEx6": "Observez la couleur de l'eau et notez l'heure à laquelle vous avez perdu les eaux, puis rendez-vous directement à l'hôpital",
   "signsAs": "Astuce : Pour les reconnaître, vous sentirez votre ventre se durcir, comme si on vous serrait. Pour le vérifier, n'hésitez pas à palper votre ventre avec vos mains : si vous le sentez dur comme du bois ou une pierre, ce sont des contractions. Si vous ressentez cela, vous devez vous rendre à l'hôpital.",
 
-
   "hospitalTitle": "Quand dois-je me rendre immédiatement à l'hôpital ?",
-  "hospitalEx1Title":"Douleur intense et persistante :",
+  "hospitalEx1Title": "Douleur intense et persistante :",
   "hospitalEx1": "Elle ne disparaît pas et survient toutes les 5 minutes (pour un premier enfant) ou toutes les 10 minutes (si vous avez déjà accouché), et dure environ une minute.",
-  "hospitalEx2Title":"Perte des eaux :",
+  "hospitalEx2Title": "Perte des eaux :",
   "hospitalEx2": "Ecoulement des eaux, qu'il soit abondant ou goutte à goutte, avec ou sans contractions, en particulier avant 37 semaines, mais aussi à terme (entre 37 et 42 semaines). ",
-  "hospitalEx3Title":"Diminution des mouvements du fœtus :",
+  "hospitalEx3Title": "Diminution des mouvements du fœtus :",
   "hospitalEx3": "Si les mouvements diminuent de manière significative ou disparaissent complètement.",
-  "hospitalEx4Title":"Saignement vaginal :",
+  "hospitalEx4Title": "Saignement vaginal :",
   "hospitalEx4": "Perte de sang, quelle qu'en soit la quantité, surtout si abondant et accompagné de douleurs.",
-  "hospitalEx5Title":"Hypertension artérielle :",
+  "hospitalEx5Title": "Hypertension artérielle :",
   "hospitalEx5": "Maux de tête sévères, troubles de la vision, acouphènes, douleurs dans la partie supérieure de l'abdomen, gonflement soudain des mains et des pieds.",
-  "hospitalEx6Title":"Symptômes d'accouchement prématuré :",
+  "hospitalEx6Title": "Symptômes d'accouchement prématuré :",
   "hospitalEx6": "Contractions régulières avant la 37e semaine de grossesse, ou douleurs dans le bas du dos avec pression dans le bassin.",
-  "hospitalEx7Title":"Symptômes d'infection :",
+  "hospitalEx7Title": "Symptômes d'infection :",
   "hospitalEx7": "Fièvre élevée (38 °C ou plus), écoulements anormaux accompagnés d'une odeur fétide, douleur lors de la miction, frissons.",
-  "hospitalEx8Title":"Blessure :",
+  "hospitalEx8Title": "Blessure :",
   "hospitalEx8": "Tout accident ou chute pourrait mettre en danger la santé du fœtus et votre propre sécurité.",
-  "hospitalEx9Title":"Maux de tête sévères et persistants :",
+  "hospitalEx9Title": "Maux de tête sévères et persistants :",
   "hospitalEx9": "Qui ne disparaissent pas au repos et ne sont pas soulagés avec des analgésiques.",
 
   "birthBagTitle": "La valise pour l'accouchement",
@@ -376,7 +368,6 @@
   "birthBagBabyItem10": "Thermomètre",
   "birthBagBabyItem11": "Couverture en coton selon la saison",
 
-
   "birthBagMotherTitle": "La mère",
   "birthBagMotherItem1": "Les documents nécessaires sont réunis et organisés dans une chemise : carte d'identité, livret de famille, carte de groupe sanguin, dossier médical (analyses médicales, échographies, etc.).",
   "birthBagMotherItem2": "Vous pouvez apporter de l'huile d'olive ou de l'huile de paraffine pour faciliter l'examen du col de l'utérus et la sortie du fœtus.",
@@ -394,13 +385,10 @@
   "birthBagInfoEx1": "Préparez un petit sac pour la salle d'accouchement contenant :",
   "birthBagInfoEx2": "Les premiers vêtements que portera votre enfant (un bonnet, une couche, une grenouillère....etc.) ainsi que des couches pour vous, des serviettes hygiéniques, slip en coton et des grandes langes en coton.",
 
-
-
-  
   "pendantAccouchement": {
-    "title":"Pendant l'accouchement ",
+    "title": "Pendant l'accouchement ",
     "gestionPeurAnxiete": {
-      "title":"Gestion de la peur et de l'anxiété",
+      "title": "Gestion de la peur et de l'anxiété",
       "introduction": [
         "C'est naturel, Le corps et le mental sont plus connectés que vous ne l'imaginez, alors entraîner votre mental et votre psychisme pendant la grossesse peut transformer l'expérience de l'accouchement d'une source d'anxiété en un moment de force et de sérénité",
         "Si votre esprit est convaincu que l'accouchement est dangereux, il sécrétera de l'adrénaline, une hormone qui a des effets négatifs sur :"
@@ -431,10 +419,10 @@
         "Une suture peut être réalisée sous anesthésie locale. Reste calme, ne t'inquiète pas, c'est rapide et ça te protège.",
         "Connaître toutes les étapes qui se dérouleront vous aidera à accepter ce que vous traversez et à surmonter vos peurs"
       ],
-      "note":"En cas de complications ayant conduit à une césarienne, utilisation de forceps, déchirures, délivrance artificielle … Restez calme et faites confiance au personnel médical, car votre sécurité et celle de votre bébé sont primordiales."
+      "note": "En cas de complications ayant conduit à une césarienne, utilisation de forceps, déchirures, délivrance artificielle … Restez calme et faites confiance au personnel médical, car votre sécurité et celle de votre bébé sont primordiales."
     },
     "massageRelaxation": {
-      "title":"Massage et relaxation ",
+      "title": "Massage et relaxation ",
       "description": "Le massage aide à réduire le stress et à libérer des hormones apaisantes telles que l'ocytocine, ce qui soulage la douleur et stimule les contractions.",
       "techniques": [
         "Massez le bas du dos avec des mouvements circulaires lorsque vous ressentez des contractions.",
@@ -444,13 +432,13 @@
       ]
     },
     "techniques_respiration": {
-      "title":"Techniques de respiration  ",
-      "introduction":[
+      "title": "Techniques de respiration  ",
+      "introduction": [
         "La respiration profonde et régulière est l'un des moyens les plus efficaces pour soulager la douleur et améliorer la concentration de la mère pendant le travail (contractions)",
         "Il en existe deux types :"
       ],
       "respiration_profonde": "La respiration profonde : Inspirez profondément par le nez pendant 4 secondes, retenez votre souffle pendant 4 secondes, puis expirez lentement par la bouche pendant 6 secondes.",
-      "respiration_soufflante":"La respiration soufflante : C'est la respiration haletante ou « respiration du petit chien », basée sur les souffles, permet de mieux gérer la douleur des contractions, car plus on souffle, plus le corps se détend et l'utérus se relâche. La respiration doit être calme et régulière. Il faut inspirer par le nez sur un temps court, puis souffler par la bouche  beaucoup plus lentement.",
+      "respiration_soufflante": "La respiration soufflante : C'est la respiration haletante ou « respiration du petit chien », basée sur les souffles, permet de mieux gérer la douleur des contractions, car plus on souffle, plus le corps se détend et l'utérus se relâche. La respiration doit être calme et régulière. Il faut inspirer par le nez sur un temps court, puis souffler par la bouche  beaucoup plus lentement.",
       "respiration_poussee": [
         "La respiration pendant la poussée :",
         "Au début de la contraction : inspirez profondément, puis retenez votre souffle.",
@@ -460,7 +448,7 @@
       ]
     },
     "technique_poussee": {
-      "title":"Technique de poussée ",
+      "title": "Technique de poussée ",
       "instructions": [
         "Une fois installée sur la table d'accouchement, suivez toutes les instructions de la sage-femme.",
         "Poussez lorsque la sage-femme vous le demande et veillez à ne pousser que pendant la contraction.",
@@ -469,15 +457,15 @@
       ]
     },
     "role_proches": {
-      "title":"Le rôle des proches  ",
+      "title": "Le rôle des proches  ",
       "description": [
         "Le soutien émotionnel de la part du conjoint ou des proches joue un rôle important dans la réduction du stress et rend l'accouchement plus confortable.",
         "Le soutien à distance de la part du conjoint vous procure un sentiment de sécurité et de confort grâce à appels ou des messages vocaux rassurants et des prières pour vous."
-      ]  
+      ]
     },
     "positions": {
-      "title":"Différentes positions  ",
-      "instructions":"Voici quelques positions confortables pour accélérer le travail et soulager la douleur :",
+      "title": "Différentes positions  ",
+      "instructions": "Voici quelques positions confortables pour accélérer le travail et soulager la douleur :",
       "exemples": [
         "Marcher et bouger aide le bébé à descendre dans le bassin",
         "La position à genoux avec les mains en appui réduit la douleur dans le bas du dos et facilite la descente du bébé",
@@ -486,14 +474,14 @@
       ]
     },
     "cesarienne": {
-      "title":"La Césarienne   ",
-      "instructions":"Ce n'est pas un choix personnel, mais une intervention chirurgicale médicale pour sauver la mère ou le fœtus en cas de problème qui le nécessite",
-      "avantTitre":"Avant la césarienne :",
+      "title": "La Césarienne   ",
+      "instructions": "Ce n'est pas un choix personnel, mais une intervention chirurgicale médicale pour sauver la mère ou le fœtus en cas de problème qui le nécessite",
+      "avantTitre": "Avant la césarienne :",
       "avant": [
         "Prenez une douche et épilez la zone de la césarienne au préalable afin d'éviter tout risque d'inflammation.",
         "Ta valise est normalement déjà prête."
       ],
-      "pendantTitre":"Pendant la césarienne :",
+      "pendantTitre": "Pendant la césarienne :",
       "pendant": [
         "être à jeun depuis au moins 6 à 8 heures.",
         "Apportez tous les documents médicaux qui vous ont été demandés (analyses médicales, dossier d'anesthésie, etc.).",
@@ -502,7 +490,7 @@
         "Ne soyez pas nerveuse, vous serez entourée d'une équipe médicale qualifiée.",
         "Suivez les instructions du médecin"
       ],
-      "apresTitre":"Après la césarienne :",
+      "apresTitre": "Après la césarienne :",
       "apres": [
         "Restez allongée sans bouger la tête pendant au moins 3 heures, sans oreiller",
         "Si vous êtes autorisée à manger, vous pouvez commencer par boire du café car il atténue les maux de tête liés à l'anesthésie et aide le corps à s'en débarrasser.",
@@ -513,7 +501,7 @@
         "Veillez à consommer des aliments riches en protéines pour faciliter le processus de guérison.",
         "Marcher progressivement chaque jour peut aider à prévenir les caillots sanguins, mais aussi la constipation."
       ],
-      "gazApresCesarienneTitre":"Gaz après une césarienne :",
+      "gazApresCesarienneTitre": "Gaz après une césarienne :",
       "gazApresCesarienne": [
         "Le lever précoce, après 6 heures, avec l'aide d'une personne, permet de libérer ces gaz.",
         "Mâchez du chewing-gum dans la salle de réveil pour stimuler le transit intestinal et empêcher l'accumulation de gaz.",
@@ -526,15 +514,10 @@
     }
   },
 
-
-
-
-
-
   "apresAccouchement": {
-    "title":"Apres l'accouchement",
+    "title": "Apres l'accouchement",
     "periodePostpartum": {
-      "title":"Période postpartum ",
+      "title": "Période postpartum ",
       "conseilGeneral": "Évitez d'utiliser des produits cosmétiques à l'hôpital, car ils peuvent masquer certains symptômes pathologiques (visage pâle, lèvres bleues).",
       "saignementsPostnataux": [
         "Saignements postnataux",
@@ -553,14 +536,14 @@
         "Prendre des analgésiques, mais après avoir consulté un médecin ou une sage femme."
       ],
       "troublesUrinairesDefecation": {
-        "title":"Troubles urinaires et troubles de la défécation ",
-        "introduction":"En raison de la pression exercée par la poussée pour expulser le bébé ou d'une peur intense, il peut y avoir :",
+        "title": "Troubles urinaires et troubles de la défécation ",
+        "introduction": "En raison de la pression exercée par la poussée pour expulser le bébé ou d'une peur intense, il peut y avoir :",
         "symptomes": [
           "Une difficulté temporaire à uriner et à aller à la selle après l'accouchement : C'est normal dans les premières heures qui suivent l'accouchement.",
           "Douleur lors des premières mictions : due aux points de suture ou aux gonflements survenus pendant l'accouchement.",
           "Incapacité à contrôler sa vessie."
         ],
-        "note":"Mais une difficulté à uriner et à aller à la selle à long terme consultez votre médecin.",
+        "note": "Mais une difficulté à uriner et à aller à la selle à long terme consultez votre médecin.",
         "conseils": [
           "Conseils :",
           "N'attendez pas pour aller aux toilettes afin de ne pas aggraver le problème, notamment une infection urinaire.",
@@ -569,8 +552,8 @@
           "Essayez de vous asseoir dans de l'eau chaude pour réduire les gonflements et la douleur ."
         ]
       },
-      "fatigueEpuisement":[
-        "Fatigue et épuisement", 
+      "fatigueEpuisement": [
+        "Fatigue et épuisement",
         "C'est tout à fait normal, car votre corps a vécu une expérience difficile et épuisante. Il est donc nécessaire de dormir et de se reposer dès que possible pour guérir."
       ],
       "congestionSeins": [
@@ -610,7 +593,6 @@
         "Stabilisation de la température, de la glycémie et du rythme cardiaque",
         "Remarque : Les contractions utérines post-partum indiquent que l'utérus a commencé à retrouver sa taille normale et sont importantes pour prévenir les hémorragies post-partum",
         ""
-       
       ],
       "commentAllaiter": [
         "Comment allaiter ?",
@@ -623,9 +605,9 @@
       ]
     },
     "hygienePersonnelle": {
-      "title":"Hygiène personnelle",
+      "title": "Hygiène personnelle",
       "douche": {
-        "title":"La douche ",
+        "title": "La douche ",
         "accouchementNaturel": "Accouchement naturel",
         "accouchementNaturelSansEpisiotomie": "Sans épisiotomie : Vous pouvez prendre une douche après votre sortie de l'hôpital en utilisant de l'eau tiède.",
         "accouchementNaturelAvecEpisiotomie": "En cas d'épisiotomie ou de suture : Attendez 3 ou 4 jours que la plaie sèche, mais veillez à bien sécher la zone suturée avec une serviette propre après la douche.",
@@ -633,7 +615,7 @@
         "cesarienne": "La douche peut être prise après le retrait des pansements, soit environ 10 jours après l'accouchement, mais s'il y a des pansements imperméables,vous pouvez vous doucher dès les premiers jours. "
       },
       "soinsPointsSuture": {
-        "title":"Soins des points de suture",
+        "title": "Soins des points de suture",
         "accouchementNaturel": [
           "Accouchement naturel",
           "Les soins quotidiens jouent un rôle important dans la prévention des infections et le soulagement de la douleur.",
@@ -682,12 +664,12 @@
       "Réduisez la quantité de café et de thé, et évitez tout excitant"
     ],
     "conseilsNourrisson": {
-      "title":"Conseils pour le nourrisson",
+      "title": "Conseils pour le nourrisson",
       "premieresHeures": [
         "Pour les premières heures",
         "Immédiatement après l'accouchement, vous remarquerez peut-être que la tête de votre bébé est allongée. Cela est dû à la pression exercée par le canal vaginal pendant l'accouchement. Ne vous inquiétez pas, c'est tout à fait normal et cela disparaîtra après quelques jours, la tête de votre bébé reprenant sa forme normale.",
         "Son corps est recouvert d'une substance grasse blanche qui protège et nourrit sa peau. Ne l'enlevez pas après l'accouchement, car sa peau l'absorbera après quelques heures.",
-        "Surveillez la couleur (pâle, jaune ou bleue) et la température de sa peau, et si quelque chose vous inquiète, consultez immédiatement la sage-femme."  
+        "Surveillez la couleur (pâle, jaune ou bleue) et la température de sa peau, et si quelque chose vous inquiète, consultez immédiatement la sage-femme."
       ],
       "alimentation": [
         "Alimentation du bebe",
@@ -708,7 +690,6 @@
         "Le cordon ombilical sèche et tombe au bout de 4 à 10 jours.",
         "Si vous remarquez une rougeur, une odeur désagréable ou un écoulement de pus, ou élévation de la température corporelle, consultez votre pédiatre.",
         "Remarque : le médicament rouge (Eosine aqueuse) peut masquer ces symptômes. Si vous l'utilisez, surveillez l'état du cordon ombilical."
-
       ],
       "soinsQuotidiens": [
         "Soins quotidiens",
@@ -741,38 +722,33 @@
       ]
     },
     "medicaments": {
-      "title":"Médicaments",
-      "introduction":"Après l'accouchement, le médecin vous prescrira certains médicaments, veuillez ne pas les négliger.",
-      "antibiotiquesTitle":"Antibiotiques :",
+      "title": "Médicaments",
+      "introduction": "Après l'accouchement, le médecin vous prescrira certains médicaments, veuillez ne pas les négliger.",
+      "antibiotiquesTitle": "Antibiotiques :",
       "antibiotiques": "Mesure préventive contre les infections bactériennes résultant de votre exposition à diverses procédures à l'hôpital, veillez donc à le prendre régulièrement pendant toute la durée prescrite.",
-      "anticoagulantsTitle":"Anticoagulants :",
+      "anticoagulantsTitle": "Anticoagulants :",
       "anticoagulants": "Il s'agit d'un médicament qui empêche la coagulation du sang. Il doit être pris après l'accouchement et, pour en augmenter l'efficacité, vous pouvez vous lever et marcher dès que vous vous sentez prête.",
-      "contraceptifsTitle":"Contraceptifs :",
+      "contraceptifsTitle": "Contraceptifs :",
       "contraceptifs": "Choisissez un moyen de contraception adapté à votre état de santé et à votre mode d'allaitement.",
-      "contraceptifs2":"Le choix le plus approprié sera fait par votre médecin ou sage femme, il est donc préférable d'en discuter avec lui.",
-      "suplementationTitle":"Supplémentation  :",
-      "suplementation":"Surtout en fer et en calcium",
-      "AntiseptiqueTitle":"Antiseptique local :",
-      "Antiseptique":"Pour votre toilette",
-      "rééducationPérinéaleTitle":"La rééducation périnéale :",
-      "rééducationPérinéale":"La rééducation périnéale post-partum (voie basse ou césarienne) est essentielle pour prévenir l'incontinence et les descentes d'organes. Elle débute généralement 6 à 8 semaines après l'accouchement, avec un kinésithérapeute ou une sage-femme."
-    
-    
+      "contraceptifs2": "Le choix le plus approprié sera fait par votre médecin ou sage femme, il est donc préférable d'en discuter avec lui.",
+      "suplementationTitle": "Supplémentation  :",
+      "suplementation": "Surtout en fer et en calcium",
+      "AntiseptiqueTitle": "Antiseptique local :",
+      "Antiseptique": "Pour votre toilette",
+      "rééducationPérinéaleTitle": "La rééducation périnéale :",
+      "rééducationPérinéale": "La rééducation périnéale post-partum (voie basse ou césarienne) est essentielle pour prévenir l'incontinence et les descentes d'organes. Elle débute généralement 6 à 8 semaines après l'accouchement, avec un kinésithérapeute ou une sage-femme."
     }
   },
 
-
-        
-
-  "weeksTitle":"Developpement Du Foetus",
-  "weeksConseils":"Conseils",
-  "weeksSymptomes":"Symptômes possibles",
-  "weeksRemarque":"Remarque",
+  "weeksTitle": "Developpement Du Foetus",
+  "weeksConseils": "Conseils",
+  "weeksSymptomes": "Symptômes possibles",
+  "weeksRemarque": "Remarque",
   "weeks": {
     "1": {
-      "img":"semaine1.jpg",
+      "img": "semaine1.jpg",
       "value": "1",
-      "label":"Semaine 1",
+      "label": "Semaine 1",
       "intro": [
         "Chère maman, vos règles sont en train de se terminer.",
         "Les follicules commencent à mûrir dans les ovaires afin de libérer les ovules.",
@@ -785,17 +761,15 @@
         "Éviter l'alcool, le tabac et l’automédication ",
         "Commencer à prendre de l’acide folique si vous prévoyez une grossesse (est une vitamine B qui aide à réduire le risque de malformations au niveau du cerveau et de la colonne vertébrale du bébé)."
       ],
-      "symptomes": [
-        
-      ],
+      "symptomes": [],
       "note": [
         "Il est difficile de connaître le jour exact de la fécondation. Pour évaluer la durée de la grossesse, les médecins utilisent le nombre de semaines sans menstruation. Le calcul de la date d'accouchement commence donc au premier jour de la date de la dernière menstruation. Cette méthode de calcul ajoute 14 jours à la durée de la grossesse. Avec cette façon de calculer, vous n'êtes donc pas enceinte durant les 2 premières semaines."
       ]
     },
     "2": {
-      "img":"semaine2.jpg",
+      "img": "semaine2.jpg",
       "value": "2",
-      "label":"Semaine 2",
+      "label": "Semaine 2",
       "intro": [
         "L'ovaire droit ou gauche  libère un ovule mature, c'est l'ovulation, qui a lieu généralement à la fin de cette semaine. ",
         "L'ovule expulsé descend alors le long de la trompe de Fallope, lieu de la fécondation (La durée de vie de l'ovule est de 12 à 24 heures)",
@@ -815,9 +789,9 @@
       "note": []
     },
     "3": {
-      "img":"semaine3.jpg",
+      "img": "semaine3.jpg",
       "value": "3",
-      "label":"Semaine 3",
+      "label": "Semaine 3",
       "intro": [
         "Chère maman, tu es à ton premier mois",
         "Durant cette semaine, la fécondation peut avoir lieu si un spermatozoïde rencontre un ovule dans la trompe de Fallope. Le spermatozoïde pénètre alors à l'intérieur de l'ovule et ils fusionnent pour former un œuf composé d'une seule cellule : c'est le début de la grossesse.",
@@ -829,18 +803,18 @@
         "Éviter de prendre des médicaments sans avis médical",
         "Bien s'hydrater",
         "Évitez le stress et l’anxiété"
-     ],
+      ],
       "symptomes": [
         "En réalité, les premiers symptômes, tels qu’un léger saignement (ce saignement ne se produit généralement que 10 à 14 jours après la fécondation et toutes les femmes n’en font pas l’expérience), des crampes d’estomac, des ballonnements ou une légère fatigue, n’apparaîtront pas immédiatement, mais plutôt à la fin de cette semaine de grossesse, lorsque l’ovule fécondé s’implantera dans l’utérus.",
         "La plupart des femmes remarquent d'abord le retard de règles.",
         "Les nausées matinales apparaissent généralement un peu plus tard."
       ],
-      "note":[]
+      "note": []
     },
     "4": {
-      "img":"semaine4.jpg",
+      "img": "semaine4.jpg",
       "value": "4",
-      "label":"Semaine 4",
+      "label": "Semaine 4",
       "intro": [
         "Chère maman, tu es toujours à ton premier mois",
         "L'œuf fécondé s'attache à la paroi de l'utérus. Cette étape est appelée « nidation ». Ce processus dure quelques jours et nécessite la production d'une hormone spécifique, l'hormone gonadotrophine chorionique humaine (HCG), par l'œuf. C'est cette hormone que les tests de grossesse détectent.",
@@ -865,13 +839,14 @@
         "Légers saignements d’implantation",
         "Sautes d’humeur "
       ],
-      "note": ["Les bananes sont riches en glucides, en fibres alimentaires, en acides gras essentiels, en vitamine C, en vitamines du groupe B, ainsi qu'en minéraux tels que le magnésium, le potassium, le calcium et le fer. Tous ces nutriments contribuent au bon développement du fœtus dans l'utérus et permettent également de soulager certains désagréments liés à la grossesse."
+      "note": [
+        "Les bananes sont riches en glucides, en fibres alimentaires, en acides gras essentiels, en vitamine C, en vitamines du groupe B, ainsi qu'en minéraux tels que le magnésium, le potassium, le calcium et le fer. Tous ces nutriments contribuent au bon développement du fœtus dans l'utérus et permettent également de soulager certains désagréments liés à la grossesse."
       ]
     },
     "5": {
-      "img":"semaine5.jpg",
+      "img": "semaine5.jpg",
       "value": "5",
-      "label":"Semaine 5",
+      "label": "Semaine 5",
       "intro": [
         "Chère maman, tu es toujours à ton premier mois",
         "Votre bébé a maintenant la taille d'un pépin de pomme.",
@@ -896,13 +871,12 @@
         "Si les douleurs, les ballonnements ou les saignements sont intenses, contactez rapidement un médecin",
         "Ces symptômes devraient disparaître progressivement au début du quatrième mois."
       ],
-      "note": [
-      ]
+      "note": []
     },
     "6": {
-      "img":"semaine6.jpg",
+      "img": "semaine6.jpg",
       "value": "6",
-      "label":"Semaine 6",
+      "label": "Semaine 6",
       "intro": [
         "Chère maman, tu es toujours à ton premier mois.",
         "Votre bébé a maintenant la taille d'un petit pois.",
@@ -929,13 +903,14 @@
         "Digestion : La progestérone ralentit le transit, causant parfois de la constipation. Buvez beaucoup d'eau, mangez des fibres et restez active pour faciliter la digestion.",
         "Envies alimentaires : Il est normal de céder à quelques envies subites ; essayez simplement de privilégier des aliments sains pour répondre aux besoins de bébé."
       ],
-      "note": ["Bien que la consommation de poisson soit généralement bénéfique en raison de sa teneur en protéines et en oméga-3, les femmes enceintes doivent limiter leur consommation de certains poissons, en particulier au cours des premiers mois de grossesse, car ceux-ci contiennent des taux élevés de mercure, qui a un impact considérable sur le développement du système nerveux du fœtus. "
+      "note": [
+        "Bien que la consommation de poisson soit généralement bénéfique en raison de sa teneur en protéines et en oméga-3, les femmes enceintes doivent limiter leur consommation de certains poissons, en particulier au cours des premiers mois de grossesse, car ceux-ci contiennent des taux élevés de mercure, qui a un impact considérable sur le développement du système nerveux du fœtus. "
       ]
     },
     "7": {
-      "img":"semaine7.jpg",
+      "img": "semaine7.jpg",
       "value": "7",
-      "label":"Semaine 7",
+      "label": "Semaine 7",
       "intro": [
         "Chère maman, tu entres dans ton deuxième mois",
         "Votre bébé a maintenant la taille d'une myrtille",
@@ -963,9 +938,9 @@
       "note": []
     },
     "8": {
-      "img":"semaine8.jpg",
+      "img": "semaine8.jpg",
       "value": "8",
-      "label":"Semaine 8",
+      "label": "Semaine 8",
       "intro": [
         "Chère maman, tu es toujours à ton deuxième mois",
         "Bébé a la taille d'une graine de grenade (14 à 18 mm, environ 2 g).",
@@ -979,7 +954,6 @@
         "Évitez les aliments crus pendant la grossesse ; la viande doit être bien cuite, car une viande insuffisamment cuite peut contenir des listérias, des toxoplasmes, des E. coli, des norovirus et d'autres « agents pathogènes » susceptibles de nuire à la santé du fœtus",
         "Si vous ressentez également une sensation de brûlure et des douleurs lors de la miction, il est préférable de consulter un médecin ou une sage femme pour traiter des problèmes tels que les infections urinaires",
         "Si vous avez du temps libre, informez-vous sur les complications possibles de la grossesse, ainsi que sur les signes et symptômes à ne pas ignorer."
-      
       ],
       "symptomes": [
         "Besoin fréquent d'uriner : votre corps produit davantage de sang pour nourrir votre bébé, ce qui augmente le volume sanguin circulant dans les reins. De plus, l'utérus grossit progressivement et exerce une pression sur la vessie, ce qui provoque des envies fréquentes d'uriner.",
@@ -991,9 +965,9 @@
       "note": []
     },
     "9": {
-      "img":"semaine9.jpg",
+      "img": "semaine9.jpg",
       "value": "9",
-      "label":"Semaine 9",
+      "label": "Semaine 9",
       "intro": [
         "Chère maman, tu es toujours à ton deuxième mois.",
         "Votre bébé mesure maintenant environ 22 mm et pèse entre 2,6 et 4,5 g. Il a la taille d'une cerise.",
@@ -1020,9 +994,9 @@
       "note": []
     },
     "10": {
-      "img":"semaine10.jpg",
+      "img": "semaine10.jpg",
       "value": "10",
-      "label":"Semaine 10",
+      "label": "Semaine 10",
       "intro": [
         "Chère maman, tu es toujours à ton deuxième mois.",
         "Votre bébé mesure maintenant environ 3 cm. Il pèse environ 8 g. Il a la taille d'une fraise.",
@@ -1047,9 +1021,9 @@
       "note": []
     },
     "11": {
-      "img":"semaine11.jpg",
+      "img": "semaine11.jpg",
       "value": "11",
-      "label":"Semaine 11",
+      "label": "Semaine 11",
       "intro": [
         "Chère maman, tu entres dans ton troisième mois.",
         "Son visage devient de plus en plus reconnaissable : ses yeux se sont déplacés vers l’avant, ses paupières les recouvrent, ses lèvres sont bien dessinées et il peut déjà ouvrir la bouche pour avaler un peu de liquide amniotique. Ses reins commencent à fonctionner et son système urinaire rejette ce liquide sous forme d’urine.",
@@ -1065,9 +1039,9 @@
       "note": []
     },
     "12": {
-      "img":"semaine12.jpg",
+      "img": "semaine12.jpg",
       "value": "12",
-      "label":"Semaine 12",
+      "label": "Semaine 12",
       "intro": [
         "Chère maman, tu es toujours à ton troisième mois votre bébé a la taille d'une prune.",
         "Tous les organes et systèmes vitaux de ton bébé sont désormais partiellement formés et poursuivent leur développement. Ses extrémités se précisent et ses petits ongles commencent à pousser. Son intestin, qui se trouvait dans le cordon ombilical, est maintenant bien rentré dans son ventre.",
@@ -1084,9 +1058,9 @@
       "note": []
     },
     "13": {
-      "img":"semaine13.jpg",
+      "img": "semaine13.jpg",
       "value": "13",
-      "label":"Semaine 13",
+      "label": "Semaine 13",
       "intro": [
         "Chère maman, tu es toujours à ton troisième mois votre bébé a la taille d'un citron.",
         "Les premiers tissus osseux commencent à se former dans le bassin, les côtes, la tête et les membres, même s’ils restent encore mous. La colonne vertébrale se développe progressivement.",
@@ -1102,9 +1076,9 @@
       "note": []
     },
     "14": {
-      "img":"semaine14.jpg",
+      "img": "semaine14.jpg",
       "value": "14",
-      "label":"Semaine 14",
+      "label": "Semaine 14",
       "intro": [
         "Chère maman, tu es toujours à ton troisième mois Votre bébé a la taille d'une nectarine.",
         "Le visage de ton bébé s’anime : certains traits se précisent comme le nez et la bouche, et ses oreilles ont pris leur place sur les côtés de la tête. Il est capable de faire quelques expressions faciales, comme froncer les sourcils ou grimacer, même si ce sont encore des réflexes. Un signe distinctif apparaît également : ses empreintes digitales.",
@@ -1120,9 +1094,9 @@
       "note": []
     },
     "15": {
-      "img":"semaine15.jpg",
+      "img": "semaine15.jpg",
       "value": "15",
-      "label":"Semaine 15",
+      "label": "Semaine 15",
       "intro": [
         "Chère maman, tu es toujours à ton troisième mois  votre bébé a la taille d'une pomme.",
         "Ton bébé entre dans une phase de croissance accélérée : il mesure environ 12 cm et pèse autour de 80 g. Tous ses organes sont en place et commencent à remplir leurs fonctions. Ses jambes deviennent plus longues que ses bras, ce qui lui donne une silhouette plus harmonieuse.",
@@ -1139,9 +1113,9 @@
       "note": []
     },
     "16": {
-      "img":"semaine16.jpg",
+      "img": "semaine16.jpg",
       "value": "16",
-      "label":"Semaine 16",
+      "label": "Semaine 16",
       "intro": [
         "Chère maman, tu entres dans ton quatrième mois votre bébé a la taille d'un avocat.",
         "Ton bébé gagne en force et ses petits coups de pied deviennent plus vigoureux. Ses mouvements sont mieux coordonnés : lorsqu’il touche le cordon ombilical, il s’éloigne d’abord, mais bientôt il le considérera comme un jouet qu’il attrape, tire et repousse, ce qui rend ses mains plus agiles.",
@@ -1157,9 +1131,9 @@
       "note": []
     },
     "17": {
-      "img":"semaine17.jpg",
+      "img": "semaine17.jpg",
       "value": "17",
-      "label":"Semaine 17",
+      "label": "Semaine 17",
       "intro": [
         "Chère maman, tu es toujours à ton quatrième mois votre bébé a la taille d'une poire.",
         "À l’intérieur du corps de ton bébé, la graisse commence à se former essentielle pour lui permettre de conserver sa chaleur après la naissance. Cette réserve lui fournira aussi de l’énergie dans les premiers instants de sa vie. Ton bébé commence également à développer ses propres anticorps.",
@@ -1175,9 +1149,9 @@
       "note": []
     },
     "18": {
-      "img":"semaine18.jpg",
+      "img": "semaine18.jpg",
       "value": "18",
-      "label":"Semaine 18",
+      "label": "Semaine 18",
       "intro": [
         "Chère maman, tu es toujours à ton quatrième mois votre bébé a la taille d'une patate douce.",
         "La proportion du corps de ton bébé change : sa tête est désormais plus petite par rapport au reste de son corps. La circulation sanguine atteint ses extrémités, ce qui le rend beaucoup plus actif. Il se déplace dans l’utérus, se retourne, bouge ses bras et ses jambes, touche ses orteils et son visage. Tu pourrais commencer à percevoir de très légers mouvements, semblables à une petite vague.",
@@ -1194,9 +1168,9 @@
       "note": []
     },
     "19": {
-      "img":"semaine19.jpg",
+      "img": "semaine19.jpg",
       "value": "19",
-      "label":"Semaine 19",
+      "label": "Semaine 19",
       "intro": [
         "Chère maman, tu es toujours à ton quatrième mois  votre bébé à la taille d'une mangue.",
         "C'est une étape fascinante pour ton bébé : dans son cerveau, les zones spécialisées des 5 sens se mettent en place. Il commence désormais à traiter l’information sensorielle qu’il reçoit ; un tout nouveau monde s’ouvre à lui! Cette semaine, sa peau se couvre d'une substance blanche et grasse appelée le vernix, qui sert à protéger sa peau délicate contre les frottements et l'irritation. Malgré sa croissance, il a encore assez de place pour bouger vigoureusement ses bras et ses jambes. Il mesure environ 20 cm et pèse autour de 260 g."
@@ -1210,9 +1184,9 @@
       "note": []
     },
     "20": {
-      "img":"semaine20.jpg",
+      "img": "semaine20.jpg",
       "value": "20",
-      "label":"Semaine 20",
+      "label": "Semaine 20",
       "intro": [
         "Chère maman, tu entres dans ton cinquième mois votre bébé a la taille d'une poivron.",
         "marquant le milieu de ton aventure ! C'est une étape riche en émotions car c'est souvent à cette période que la plupart des mamans commencent enfin à sentir les mouvements du bébé dans ton ventre, le fœtus s’entraîne activement à bouger toutes les parties de son corps ; ses muscles gagnent en volume et en puissance, rendant ses coups plus vigoureux. Bien qu'il soit très actif, le fœtus dort encore beaucoup, entre 18 et 20 heures par jour. Scientifiquement, sa peau commence à s'épaissir tout en restant transparente. À la fin de cette semaine, ton bébé mesure environ 20 cm et pèse autour de 320 g."
@@ -1226,9 +1200,9 @@
       "note": []
     },
     "21": {
-      "img":"semaine21.jpg",
+      "img": "semaine21.jpg",
       "value": "21",
-      "label":"Semaine 21",
+      "label": "Semaine 21",
       "intro": [
         "Chère maman, tu es toujours à ton cinquième mois votre bébé a la taille d'une banane.",
         "une étape où ton bébé devient un véritable petit explorateur ! Le fœtus est désormais complètement formé et commence à se familiariser de plus en plus avec le toucher. Il s'amuse à attraper ses pieds, à joindre ses mains et porte parfois son pouce à sa bouche. Il trouve même un grand intérêt à jouer avec le cordon ombilical ! Scientifiquement, ses poumons poursuivent leur maturation et il s’exerce déjà à gonfler les muscles de son torse qui lui serviront à respirer une fois au monde. Ses globes oculaires sont formés, ses lèvres deviennent plus charnues et sa chevelure s'épaissit. À ce stade, il mesure environ 21cm pèse autour de  390 g ; il s'apprête à prendre beaucoup de poids durant le mois à venir."
@@ -1242,9 +1216,9 @@
       "note": []
     },
     "22": {
-      "img":"semaine22.jpg",
+      "img": "semaine22.jpg",
       "value": "22",
-      "label":"Semaine 22",
+      "label": "Semaine 22",
       "intro": [
         "Chère maman, tu es toujours à ton cinquième mois votre bébé a la taille d'une papaye.",
         "Ton bébé continue de s'éveiller au monde qui l'entoure ! À ce stade, ses sens se spécialisent de façon fascinante : ses cellules nerveuses liées au goût, à l'odorat, à l'ouïe et au toucher se perfectionnent. Il commence à percevoir les sons extérieurs, comme ta voix, et même la lumière à travers la paroi de ton ventre. Ses sourcils et ses cheveux deviennent plus visibles, et ses reins fonctionnent déjà en produisant de l'urine. C'est un petit être de plus en plus actif dont tu sens désormais les mouvements de façon très distincte. À ce stade, il mesure environ 23 cm et pèse autour de 400 g."
@@ -1258,9 +1232,9 @@
       "note": []
     },
     "23": {
-      "img":"semaine23.jpg",
+      "img": "semaine23.jpg",
       "value": "23",
-      "label":"Semaine 23",
+      "label": "Semaine 23",
       "intro": [
         "Chère maman, ton bébé commence à percevoir le monde extérieur de façon plus nette, tu es toujours à ton cinquième mois votre bébé a la taille d'une aubergine, le fœtus mesure environ 24 cm pèse près de 550 g. Ses systèmes sensoriels s'affinent encore : il devient capable de réagir aux sons forts et peut même sursauter s'il entend un bruit soudain. Scientifiquement, ses poumons continuent de se préparer à la vie extra-utérine en produisant du surfactant, une substance essentielle pour la respiration future. Sa peau, bien qu'encore rouge et plissée, commence à se protéger grâce au vernix caseosa (une substance grasse). Le bébé alterne désormais entre des phases de sommeil profond et des moments de grande activité où ses mouvements sont bien visibles à la surface de ton ventre."
       ],
@@ -1273,9 +1247,9 @@
       "note": []
     },
     "24": {
-      "img":"semaine24.jpg",
+      "img": "semaine24.jpg",
       "value": "24",
-      "label":"Semaine 24",
+      "label": "Semaine 24",
       "intro": [
         "Chère maman, tu es toujours à ton cinquième mois votre bébé a la taille d'un épi de maïs.",
         "le fœtus mesure environ 26 cm et pèse près de 630 g. C'est une période de développement pulmonaire intense ; ses alvéoles commencent à se former pour les futurs échanges d'oxygène. Scientifiquement, ses cycles de sommeil et d'éveil deviennent plus réguliers et ne correspondent pas forcément aux tiens. Ses papilles gustatives sont maintenant bien développées, ce qui lui permet de percevoir les saveurs du liquide amniotique selon ce que tu manges. Ses mouvements sont de plus en plus vigoureux et peuvent même parfois te surprendre par leur force."
@@ -1289,9 +1263,9 @@
       "note": []
     },
     "25": {
-      "img":"semaine25.jpg",
+      "img": "semaine25.jpg",
       "value": "25",
-      "label":"Semaine 25",
+      "label": "Semaine 25",
       "intro": [
         "Chère maman, tu es toujours à ton sixième mois votre bébé a maintenant la taille d'un chou-fleur.",
         "il pèse environ 700 g et mesure près de 34 cm. Scientifiquement, ses structures capillaires se forment et ses cheveux commencent à pousser, bien que leur couleur puisse encore changer après la naissance. Ses narines s'ouvrent également, lui permettant de s'exercer à faire des mouvements respiratoires en aspirant du liquide amniotique. C'est aussi une période où ses mains sont très actives : il peut maintenant serrer ses poings et attraper ses pieds ou le cordon ombilical."
@@ -1305,9 +1279,9 @@
       "note": []
     },
     "26": {
-      "img":"semaine26.jpg",
+      "img": "semaine26.jpg",
       "value": "26",
-      "label":"Semaine 26",
+      "label": "Semaine 26",
       "intro": [
         "Chère maman, tu es toujours à ton sixième mois votre bébé a maintenant la taille d'une courgette.",
         "il pèse environ 900 g et mesure près de 35 cm. Une étape fascinante se produit : ses yeux, qui étaient restés fermés depuis plusieurs mois pour permettre à la rétine de se développer, commencent enfin à s'ouvrir ! Scientifiquement, son cerveau montre maintenant une activité intense en réponse aux stimuli visuels et sonores. Ses poumons continuent de se préparer à la vie extérieure en produisant de plus en plus de surfactant, une substance indispensable pour qu'il puisse respirer seul le jour J."
@@ -1321,9 +1295,9 @@
       "note": []
     },
     "27": {
-      "img":"semaine27.jpg",
+      "img": "semaine27.jpg",
       "value": "27",
-      "label":"Semaine 27",
+      "label": "Semaine 27",
       "intro": [
         "Chère maman, tu es toujours à ton sixième mois votre bébé a maintenant la taille d'une laitue.",
         "il franchit une étape importante : il pèse désormais plus d'un kilogramme (environ 1 kg) et mesure près de 36 cm. Scientifiquement, Son système immunitaire commence à se renforcer en absorbant tes anticorps, ce qui le protégera après la naissance. Ses papilles gustatives sont si développées qu'il peut maintenant réagir fortement aux saveurs épicées ou sucrées du liquide amniotique."
@@ -1337,9 +1311,9 @@
       "note": []
     },
     "28": {
-      "img":"semaine28.jpg",
+      "img": "semaine28.jpg",
       "value": "28",
-      "label":"Semaine 28",
+      "label": "Semaine 28",
       "intro": [
         "Chère maman,! tu es toujours à ton sixième mois votre bébé a maintenant la taille d'une grosse laitue.",
         "il pèse environ 1,1 kg et mesure près de 38 cm. Scientifiquement, son cerveau change d'aspect : il n'est plus lisse et commence à former des sillons et des circonvolutions pour augmenter la surface des cellules nerveuses. Ses yeux sont bien ouverts et il est désormais capable de cligner des paupières. Une étape clé : son système de régulation thermique devient plus efficace, ce qui signifie qu'il commence à être capable de maintenir sa propre température corporelle."
@@ -1353,9 +1327,9 @@
       "note": []
     },
     "29": {
-      "img":"semaine29.jpg",
+      "img": "semaine29.jpg",
       "value": "29",
-      "label":"Semaine 29",
+      "label": "Semaine 29",
       "intro": [
         "Chère maman, tu entres dans ton septième mois votre bébé a la taille d'un butternut .",
         "il pèse environ 1,2 kg à 1,3 kg et mesure près de 39 cm. Scientifiquement, ses mouvements changent : comme il a moins d'espace dans ton utérus, tu ressentiras moins de pirouettes mais plus de coups de coudes et de genoux bien nets. Ses os continuent de se solidifier en absorbant beaucoup de calcium Une étape importante : ses sens sont si aiguisés qu'il peut maintenant tourner la tête vers une source de lumière continue à travers ta paroi abdominale."
@@ -1369,9 +1343,9 @@
       "note": []
     },
     "30": {
-      "img":"semaine30.jpg",
+      "img": "semaine30.jpg",
       "value": "30",
-      "label":"Semaine 30",
+      "label": "Semaine 30",
       "intro": [
         "Chère maman, tu es toujours à ton septième mois votre bébé a maintenant la taille d'un chou.",
         "il pèse environ 1,4 kg et mesure près de 40 cm. Scientifiquement, une transformation majeure s'opère : la moelle osseuse de ton bébé a maintenant pris le relais du foie et de la rate pour la production des globules rouges. Son cerveau continue de se développer à une vitesse fulgurante et il commence à réguler sa propre température de manière plus autonome. Il a également moins de liquide amniotique car il prend désormais presque toute la place dans ton utérus."
@@ -1385,9 +1359,9 @@
       "note": []
     },
     "31": {
-      "img":"semaine31.jpg",
+      "img": "semaine31.jpg",
       "value": "31",
-      "label":"Semaine 31",
+      "label": "Semaine 31",
       "intro": [
         "Chère maman, tu es toujours à ton septième mois votre bébé a la taille d'une noix de coco, il pèse environ 1,6 kg et mesure près de 41 cm. Scientifiquement, ses poumons sont les seuls organes qui ne sont pas encore tout à fait matures, bien qu'il s'exerce continuellement à respirer. Une avancée majeure : ses sens sont désormais tous fonctionnels. Il peut percevoir les saveurs, les odeurs, les sons. Sa croissance ralentit un peu en longueur, mais il va commencer à prendre beaucoup plus de poids (du gras) pour s'arrondir."
       ],
@@ -1400,9 +1374,9 @@
       "note": []
     },
     "32": {
-      "img":"semaine32.jpg",
+      "img": "semaine32.jpg",
       "value": "32",
-      "label":"Semaine 32",
+      "label": "Semaine 32",
       "intro": [
         "Chère maman, tu es toujours à ton septième mois.",
         "Votre bébé a maintenant la taille d'une aubergine. Il mesure environ 38 cm et pèse environ 1,5 kg .",
@@ -1424,7 +1398,7 @@
       "note": []
     },
     "33": {
-      "img":"semaine33.jpg",
+      "img": "semaine33.jpg",
       "value": "33",
       "label": "Semaine 33",
       "intro": [
@@ -1456,9 +1430,9 @@
       "note": []
     },
     "34": {
-      "img":"semaine34.jpg",
+      "img": "semaine34.jpg",
       "value": "34",
-      "label":"Semaine 34",
+      "label": "Semaine 34",
       "intro": [
         "Chère maman, tu es toujours à ton huitième mois.",
         "Votre bébé a maintenant la taille d'un melon cantaloup. Il mesure entre 30 et 41 cm et pèse entre 2 et 2,3 kg.",
@@ -1488,9 +1462,9 @@
       "note": []
     },
     "35": {
-      "img":"semaine35.jpg",
+      "img": "semaine35.jpg",
       "value": "35",
-      "label":"Semaine 35",
+      "label": "Semaine 35",
       "intro": [
         "Chère maman, tu es toujours à ton huitième mois.",
         "Votre bébé a maintenant la taille d'un melon miel. Il mesure entre 32 et 42 cm et pèse entre 2,1 et 2,3 kg.",
@@ -1521,9 +1495,9 @@
       "note": []
     },
     "36": {
-      "img":"semaine36.jpg",
+      "img": "semaine36.jpg",
       "value": "36",
-      "label":"Semaine 36",
+      "label": "Semaine 36",
       "intro": [
         "Chère maman, tu es toujours à ton huitième mois.",
         "Votre bébé a maintenant la taille d'une salade romaine. Il mesure environ 43 cm et pèse près de 3 kg.",
@@ -1552,7 +1526,7 @@
       "note": []
     },
     "37": {
-      "img":"semaine37.jpg",
+      "img": "semaine37.jpg",
       "value": "37",
       "label": "Semaine 37",
       "intro": [
@@ -1606,9 +1580,9 @@
       ]
     },
     "38": {
-      "img":"semaine38.jpg",
+      "img": "semaine38.jpg",
       "value": "38",
-      "label":"Semaine 38",
+      "label": "Semaine 38",
       "intro": [
         "C’est votre neuvième mois.",
         "Votre bébé a maintenant la taille d'un chou. Il mesure environ 46 cm et pèse près de 3,1 kg.",
@@ -1626,7 +1600,6 @@
         "Si vous pensez que le travail a commencé, calculez la durée et l'espacement de vos contractions : au début, elles sont espacées d'environ 10 minutes et durent 60 à 90 secondes. Elles deviennent ensuite plus rapprochées, plus intenses et ne disparaissent pas.",
         "Renseignez-vous sur les stimulateurs de l'accouchement (voir la section « Guide »).",
         "Après l’admission à l’hôpital, il est conseillé de consommer des aliments faciles à digérer et d’éviter les plats gras, froids ou épicés, afin de reconstituer vos réserves d’énergie et d'être en forme pour l’accouchement."
-
       ],
       "symptomes": [
         "Il est normal de se sentir nerveuse ou de trouver le temps long. La fatigue physique est à son maximum.",
@@ -1650,7 +1623,7 @@
       ]
     },
     "39": {
-      "img":"semaine39.jpg",
+      "img": "semaine39.jpg",
       "value": "39",
       "label": "Semaine 39",
       "intro": [
@@ -1684,7 +1657,7 @@
       "note": []
     },
     "40": {
-      "img":"semaine40.jpg",
+      "img": "semaine40.jpg",
       "value": "40",
       "label": "Semaine 40",
       "intro": [
@@ -1721,7 +1694,7 @@
       ]
     },
     "41": {
-      "img":"semaine41.jpg",
+      "img": "semaine41.jpg",
       "value": "41",
       "label": "Semaine 41",
       "intro": [
@@ -1751,14 +1724,14 @@
         "Troubles du sommeil."
       ],
       "note": [],
-      "remarque":[
+      "remarque": [
         "Bon à savoir :",
         "- La durée normale d’une grossesse est de 41 SA, mais celle-ci peut s’étendre jusqu’à 42 SA.",
         "- Un nouveau-né à terme pèse en moyenne entre 2,5 et 3,8 kg (le poids moyen idéal étant souvent proche de 3,3-3,5 kg) et mesure entre 45 et 55 cm."
       ]
     },
     "42": {
-      "img":"semaine42.jpg",
+      "img": "semaine42.jpg",
       "value": "42",
       "label": "Semaine 42",
       "intro": [
@@ -1781,7 +1754,7 @@
         "Ton corps après l’accouchement : ",
         "Essaie de te rappeler qu’il t’a fallu neuf mois pour en arriver là ; tu ne te remettras donc pas, ni émotionnellement ni physiquement, du jour au lendemain. Ton ventre de grossesse pourrait persister plus longtemps que tu ne le souhaiterais. Tu pourrais également être d'humeur changeante, avoir envie de pleurer, être épuisée, incapable de dormir ou ressentir de l'oppression et de l'anxiété. Ton appétit peut également changer : tu pourrais avoir envie de manger plus ou moins. La bonne nouvelle, c'est que ces bouleversements émotionnels devraient disparaître au bout de deux à trois semaines."
       ],
-      "remarque":[
+      "remarque": [
         "Surveillance médicale accrue : ",
         "À ce stade, le suivi est quotidien ou très fréquent.",
         "L'échographie : Elle sert à mesurer la quantité de liquide amniotique restante et à observer les mouvements du bébé.",
@@ -1789,13 +1762,5 @@
         "C'est l'étape où l'équipe médicale décide généralement de provoquer l'accouchement pour la sécurité du bébé et de la mère, afin d’éviter que le bébé ne manque d'oxygène ou de nutriments si le placenta devient trop vieux."
       ]
     }
-
   }
-
-
-
-
-
-
-   
 }
