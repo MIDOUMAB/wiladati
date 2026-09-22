@@ -7,21 +7,23 @@ import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 import Subject from "../../../components/Subject";
 import { icons } from "../../../constants/icons";
 import { useAppDirection } from "../../hooks/use-app-direction";
+import { useLanguage } from "../../hooks/use-language";
 const SafeAreaView = styled(RNSafeAreaView);
 
 const apresAcc = () => {
   const { t } = useTranslation();
   const direction = useAppDirection();
+  const { languageData } = useLanguage();
   return (
     <SafeAreaView className="flex-1 bg-white">
       <ScrollView
         contentContainerStyle={{ paddingBottom: 30 }}
-        className="w-full flex-1 px-5 py-3 "
+        className="w-full flex-1 px-5 pt-3 pb-10"
       >
-        <View className="flex-row items-center mb-6">
+        <View className="flex-row items-center mb-6" style={direction.row}>
           <Pressable
             className="w-10 h-10 rounded-full bg-gray-100 items-center justify-center shadow-sm"
-            onPress={() => router.push("/create")}
+            onPress={() => router.push("/preparation")}
           >
             <Image
               source={icons.leftArrow}
@@ -34,7 +36,7 @@ const apresAcc = () => {
             />
           </Pressable>
           <Text
-            className="mb-2 text-3xl font-sans-bold text-[#081126]"
+            className={`text-3xl font-sans-bold text-[#081126] ${languageData === "ar" ? "mr-2" : "ml-2"}`}
             style={direction.text}
           >
             {t("apresAccouchement.title")}
@@ -50,7 +52,7 @@ const apresAcc = () => {
             number="01"
             title={t("apresAccouchement.periodePostpartum.title")}
             description={t("apresAccouchement.periodePostpartum.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/periodePostpartum")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.periodPostPartumImg}
@@ -61,7 +63,7 @@ const apresAcc = () => {
             number="02"
             title={t("apresAccouchement.allaitementMaternel.title")}
             description={t("apresAccouchement.allaitementMaternel.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/allaitementMaternel")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.allaitementMaternelImg}
@@ -72,7 +74,7 @@ const apresAcc = () => {
             number="03"
             title={t("apresAccouchement.hygienePersonnelle.title")}
             description={t("apresAccouchement.hygienePersonnelle.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/hygienePersonnelle")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.hygienePersonnelImg}
@@ -83,7 +85,7 @@ const apresAcc = () => {
             number="04"
             title={t("apresAccouchement.alimentation.1")}
             description={t("apresAccouchement.alimentation.1")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/alimentationApres")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.alimentationApresImg}
@@ -94,7 +96,7 @@ const apresAcc = () => {
             number="05"
             title={t("apresAccouchement.conseilsNourrisson.title")}
             description={t("apresAccouchement.conseilsNourrisson.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/conseilsBebe")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.bebeImg}
@@ -105,7 +107,7 @@ const apresAcc = () => {
             number="06"
             title={t("apresAccouchement.medicaments.title")}
             description={t("apresAccouchement.medicaments.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/medicaments")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.medicamentsImg}

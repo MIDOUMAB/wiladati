@@ -7,34 +7,36 @@ import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 import Subject from "../../../components/Subject";
 import { icons } from "../../../constants/icons";
 import { useAppDirection } from "../../hooks/use-app-direction";
+import { useLanguage } from "../../hooks/use-language";
 const SafeAreaView = styled(RNSafeAreaView);
 
 const avantAcc = () => {
   const { t } = useTranslation();
   const direction = useAppDirection();
+  const { languageData } = useLanguage();
   return (
     <SafeAreaView className="flex-1 bg-white">
       <ScrollView
         contentContainerStyle={{ paddingBottom: 30 }}
-        className="w-full flex-1 px-5 pt-3 pb-10 "
+        className="w-full flex-1 px-5 pt-3 pb-10"
       >
-        <View className="flex-row items-center mb-6">
+        <View className="flex-row items-center mb-6" style={direction.row}>
           <Pressable
             className="w-10 h-10 rounded-full bg-gray-100 items-center justify-center shadow-sm"
-            onPress={() => router.push("/create")}
+            onPress={() => router.push("/preparation")}
           >
             <Image
               source={icons.leftArrow}
               resizeMode="contain"
               tintColor="#374151"
               className="w-5 h-5"
-              // style={
-              //   languageData === "ar" ? { transform: [{ scaleX: -1 }] } : {}
-              // }
+              style={
+                languageData === "ar" ? { transform: [{ scaleX: -1 }] } : {}
+              }
             />
           </Pressable>
           <Text
-            className="mb-2 text-3xl font-sans-bold text-[#081126]"
+            className={`w-[90%] text-3xl font-sans-bold text-[#081126] ${languageData === "ar" ? "mr-2" : "ml-2"}`}
             style={direction.text}
           >
             {t("avantAccouchTitle")}
@@ -46,7 +48,10 @@ const avantAcc = () => {
           {t("avantAccouchIntro")}
         </Text>
         <View className="flex-1 gap-y-2 w-full">
-          <Text className="text-xl font-extrabold text-[#1E3A8A] ml-35 mb-5">
+          <Text
+            className="text-xl font-extrabold text-[#1E3A8A] mb-3"
+            style={direction.text}
+          >
             1- {t("avantAccouchMentale")}
           </Text>
           <View className="gap-y-4">
@@ -54,7 +59,7 @@ const avantAcc = () => {
               number="01"
               title={t("avantAccouchFear")}
               description={t("avantAccouchFear")}
-              handlePress={() => router.push("/")}
+              handlePress={() => router.push("/Subjects/peur")}
               isLoading={false}
               isRTL={direction.isRTL}
               source={images.laPeurImg}
@@ -65,7 +70,9 @@ const avantAcc = () => {
               number="02"
               title={t("avantAccouchRelaxation")}
               description={t("avantAccouchRelaxation")}
-              handlePress={() => router.push("/")}
+              handlePress={() =>
+                router.push("/Subjects/relaxationEtRespiration")
+              }
               isLoading={false}
               isRTL={direction.isRTL}
               source={images.relaxetRespireImg}
@@ -76,7 +83,7 @@ const avantAcc = () => {
               number="03"
               title={t("avantAccouchPartenaire")}
               description={t("avantAccouchPartenaire")}
-              handlePress={() => router.push("/")}
+              handlePress={() => router.push("/Subjects/partner")}
               isLoading={false}
               isRTL={direction.isRTL}
               source={images.partenaireImg}
@@ -85,7 +92,10 @@ const avantAcc = () => {
             />
           </View>
 
-          <Text className="text-xl font-extrabold text-[#1E3A8A] ml-35 mb-5 ">
+          <Text
+            className="text-xl font-extrabold text-[#1E3A8A] mb-3 mt-5"
+            style={direction.text}
+          >
             2- {t("avantAccouchPhysique")}
           </Text>
           <View className="gap-y-4">
@@ -93,7 +103,7 @@ const avantAcc = () => {
               number="01"
               title={t("avantAccouchFood")}
               description={t("avantAccouchFood")}
-              handlePress={() => router.push("/")}
+              handlePress={() => router.push("/Subjects/alimentation")}
               isLoading={false}
               isRTL={direction.isRTL}
               source={images.alimentationImg}
@@ -104,7 +114,7 @@ const avantAcc = () => {
               number="02"
               title={t("sportTitle")}
               description={t("avantAccouchSport")}
-              handlePress={() => router.push("/")}
+              handlePress={() => router.push("/Subjects/sport")}
               isLoading={false}
               isRTL={direction.isRTL}
               source={images.sport1Img}
@@ -115,7 +125,7 @@ const avantAcc = () => {
               number="03"
               title={t("sportKeigelTitle")}
               description={t("avantAccouchSport")}
-              handlePress={() => router.push("/")}
+              handlePress={() => router.push("/Subjects/sportKeigel")}
               isLoading={false}
               isRTL={direction.isRTL}
               source={images.sport2Img}
@@ -126,7 +136,7 @@ const avantAcc = () => {
               number="04"
               title={t("avantAccouchMassage")}
               description={t("avantAccouchMassage")}
-              handlePress={() => router.push("/")}
+              handlePress={() => router.push("/Subjects/massage")}
               isLoading={false}
               isRTL={direction.isRTL}
               source={images.massagePerineeImg}

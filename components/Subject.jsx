@@ -1,5 +1,7 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { icons } from "../constants/icons";
+import { useAppDirection } from "../src/hooks/use-app-direction";
+import { useLanguage } from "../src/hooks/use-language";
 
 const Subject = ({
   title,
@@ -12,6 +14,8 @@ const Subject = ({
   backgroundColor = "#DDEFEA",
   accentColor = "#EA7A53",
 }) => {
+  const direction = useAppDirection();
+  const { languageData } = useLanguage();
   return (
     <TouchableOpacity
       activeOpacity={0.85}
@@ -56,14 +60,14 @@ const Subject = ({
             {number}
           </Text> */}
           <Text
-            className="text-xl font-sans-bold text-white"
+            className={`text-xl font-sans-bold text-white ${languageData === "ar" ? "mr-2" : "ml-2"}`}
             style={isRTL ? styles.rtlText : styles.ltrText}
           >
             {title}
           </Text>
           {description ? (
             <Text
-              className="mt-1 text-sm font-sans-medium text-white/80"
+              className={`mt-1 text-sm font-sans-medium text-white/80 ${languageData === "ar" ? "mr-2" : "ml-2"}`}
               style={isRTL ? styles.rtlText : styles.ltrText}
             >
               {description}
@@ -74,8 +78,11 @@ const Subject = ({
           <Image
             source={icons.back}
             resizeMode="contain"
-            className="h-5 w-5"
-            style={{ tintColor: "#FFF8ED", transform: [{ rotate: "180deg" }] }}
+            className={`h-5 w-5 `}
+            style={[
+              { tintColor: "#FFF8ED" },
+              languageData === "fr" ? { transform: [{ scaleX: -1 }] } : {},
+            ]}
           />
         </View>
       </View>

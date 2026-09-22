@@ -7,21 +7,23 @@ import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 import Subject from "../../../components/Subject";
 import { icons } from "../../../constants/icons";
 import { useAppDirection } from "../../hooks/use-app-direction";
+import { useLanguage } from "../../hooks/use-language";
 const SafeAreaView = styled(RNSafeAreaView);
 
 const pendantAcc = () => {
   const { t } = useTranslation();
   const direction = useAppDirection();
+  const { languageData } = useLanguage();
   return (
     <SafeAreaView className="flex-1 bg-white">
       <ScrollView
-        contentContainerStyle={{ paddingBottom: 24 }}
-        className="w-full flex-1 px-5 py-6 "
+        contentContainerStyle={{ paddingBottom: 30 }}
+        className="w-full flex-1 px-5 pt-3 pb-10"
       >
-        <View className="flex-row items-center mb-6">
+        <View className="flex-row items-center mb-6" style={direction.row}>
           <Pressable
             className="w-10 h-10 rounded-full bg-gray-100 items-center justify-center shadow-sm"
-            onPress={() => router.push("/create")}
+            onPress={() => router.push("/preparation")}
           >
             <Image
               source={icons.leftArrow}
@@ -34,7 +36,7 @@ const pendantAcc = () => {
             />
           </Pressable>
           <Text
-            className="mb-2 text-3xl font-sans-bold text-[#081126]"
+            className={` w-[90%] text-2xl font-sans-bold text-[#081126] ${languageData === "ar" ? "mr-2" : "ml-2"}`}
             style={direction.text}
           >
             {t("pendantAccouchement.title")}
@@ -50,7 +52,7 @@ const pendantAcc = () => {
             number="01"
             title={t("pendantAccouchement.gestionPeurAnxiete.title")}
             description={t("pendantAccouchement.gestionPeurAnxiete.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/gestionPeurAnxiete")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.gestionDePeurImg}
@@ -61,7 +63,7 @@ const pendantAcc = () => {
             number="02"
             title={t("pendantAccouchement.massageRelaxation.title")}
             description={t("pendantAccouchement.massageRelaxation.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/massageRelaxation")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.massageEtRelaxationImg}
@@ -72,7 +74,7 @@ const pendantAcc = () => {
             number="03"
             title={t("pendantAccouchement.techniques_respiration.title")}
             description={t("pendantAccouchement.techniques_respiration.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/techniquesRespiration")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.techniqueDeRespirationImg}
@@ -83,7 +85,7 @@ const pendantAcc = () => {
             number="04"
             title={t("pendantAccouchement.technique_poussee.title")}
             description={t("pendantAccouchement.technique_poussee.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/techniquePoussee")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.techniqueDePousseeImg}
@@ -94,7 +96,7 @@ const pendantAcc = () => {
             number="05"
             title={t("pendantAccouchement.role_proches.title")}
             description={t("pendantAccouchement.role_proches.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/roleProches")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.roleDesProchesImg}
@@ -105,7 +107,7 @@ const pendantAcc = () => {
             number="06"
             title={t("pendantAccouchement.cesarienne.title")}
             description={t("pendantAccouchement.cesarienne.title")}
-            handlePress={() => router.push("/")}
+            handlePress={() => router.push("/Subjects/cesarienne")}
             isLoading={false}
             isRTL={direction.isRTL}
             source={images.cesarienneImg}

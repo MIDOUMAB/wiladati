@@ -10,7 +10,9 @@ const tabBar = components.tabBar;
 
 const TabLayout = () => {
   const insets = useSafeAreaInsets();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.resolvedLanguage?.startsWith("ar") ?? i18n.language.startsWith("ar");
+  const orderedTabs = isRTL ? [...tabs].reverse() : tabs;
 
   const TabIcon = ({ focused, icon }: TabIconProps) => {
     return (
@@ -36,6 +38,7 @@ const TabLayout = () => {
           backgroundColor: colors.primary,
           borderTopWidth: 0,
           elevation: 0,
+          flexDirection: isRTL ? "row-reverse" : "row",
         },
         tabBarItemStyle: {
           paddingVertical: tabBar.height / 2 - tabBar.iconFrame / 1.6,
@@ -47,7 +50,7 @@ const TabLayout = () => {
         },
       }}
     >
-      {tabs.map((tab) => (
+      {orderedTabs.map((tab) => (
         <Tabs.Screen
           key={tab.name}
           name={tab.name}

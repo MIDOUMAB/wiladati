@@ -1,3 +1,4 @@
+import { useLanguage } from "@/hooks/use-language";
 import { styled } from "nativewind";
 import { useTranslation } from "react-i18next";
 import { ScrollView, Text, TextStyle, View } from "react-native";
@@ -21,7 +22,10 @@ const Bullet = ({
 export default function Apropos() {
   const { t } = useTranslation();
   const direction = useAppDirection();
+  const { languageData } = useLanguage();
 
+  const pad2 = languageData === "ar" ? "pr-2" : "pl-2";
+  const pad3 = languageData === "ar" ? "pr-3" : "pl-3";
   return (
     <SafeAreaView className="flex-1">
       <ScrollView contentContainerStyle={{ paddingBottom: 60 }}>
@@ -58,7 +62,7 @@ export default function Apropos() {
           >
             {t("aProposIntro3")}
           </Text>
-          <View className="space-y-2">
+          <View className={`space-y-2 ${pad2}`}>
             <Bullet style={direction.text}>{t("aProposIntro3Pt1")}</Bullet>
             <Bullet style={direction.text}>{t("aProposIntro3Pt2")}</Bullet>
           </View>
@@ -74,7 +78,7 @@ export default function Apropos() {
           >
             {t("aProposGoal")}
           </Text>
-          <View className="space-y-2">
+          <View className={`space-y-2 ${pad3}`}>
             <Bullet style={direction.text}>{t("aProposPoint1")}</Bullet>
             <Bullet style={direction.text}>{t("aProposPoint2")}</Bullet>
             <Bullet style={direction.text}>{t("aProposPoint3")}</Bullet>
