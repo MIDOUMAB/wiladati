@@ -1,5 +1,7 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { icons } from "../constants/icons";
+import { useAppDirection } from "../src/hooks/use-app-direction";
+import { useLanguage } from "../src/hooks/use-language";
 
 const Subject = ({
   title,
@@ -7,10 +9,13 @@ const Subject = ({
   number,
   handlePress,
   isLoading,
+  isRTL = false,
   source,
   backgroundColor = "#DDEFEA",
   accentColor = "#EA7A53",
 }) => {
+  const direction = useAppDirection();
+  const { languageData } = useLanguage();
   return (
     <TouchableOpacity
       activeOpacity={0.85}
@@ -34,20 +39,37 @@ const Subject = ({
         </View>
       )}
       <View
-        className="absolute bottom-0 left-0 right-0 flex-row items-end px-5 pb-4 pt-3"
-        style={styles.overlay}
+        className="absolute bottom-0 left-0 right-0 flex-row items-end px-3 pb-4 pt-3"
+        style={[styles.overlay, isRTL && styles.rtlRow]}
       >
+        <Text
+          className="text-xl font-sans-bold uppercase text-white/70 text-center pb-2 px-2 "
+          style={isRTL ? styles.rtlText : styles.ltrText}
+        >
+          {number}
+        </Text>
         <View
           className="mr-3 h-10 w-1 rounded-full"
           style={{ backgroundColor: accentColor }}
         />
         <View className="min-w-0 flex-1">
-          <Text className="mb-1 text-xs font-sans-bold uppercase tracking-[1.5px] text-white/70">
+          {/* <Text
+            className="mb-1 text-xs font-sans-bold uppercase tracking-[1.5px] text-white/70"
+            style={isRTL ? styles.rtlText : styles.ltrText}
+          >
             {number}
+          </Text> */}
+          <Text
+            className={`text-xl font-sans-bold text-white ${languageData === "ar" ? "mr-2" : "ml-2"}`}
+            style={isRTL ? styles.rtlText : styles.ltrText}
+          >
+            {title}
           </Text>
-          <Text className="text-xl font-sans-bold text-white">{title}</Text>
           {description ? (
-            <Text className="mt-1 text-sm font-sans-medium text-white/80">
+            <Text
+              className={`mt-1 text-sm font-sans-medium text-white/80 ${languageData === "ar" ? "mr-2" : "ml-2"}`}
+              style={isRTL ? styles.rtlText : styles.ltrText}
+            >
               {description}
             </Text>
           ) : null}
@@ -56,8 +78,11 @@ const Subject = ({
           <Image
             source={icons.back}
             resizeMode="contain"
-            className="h-5 w-5"
-            style={{ tintColor: "#FFF8ED", transform: [{ rotate: "180deg" }] }}
+            className={`h-5 w-5 `}
+            style={[
+              { tintColor: "#FFF8ED" },
+              languageData === "fr" ? { transform: [{ scaleX: -1 }] } : {},
+            ]}
           />
         </View>
       </View>
@@ -72,4 +97,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     backgroundColor: "rgba(8,17,38,0.62)",
   },
+  rtlRow: { flexDirection: "row-reverse" },
+  rtlText: { textAlign: "right", writingDirection: "rtl" },
+  ltrText: { textAlign: "left", writingDirection: "ltr" },
 });

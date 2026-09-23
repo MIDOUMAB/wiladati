@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { Tabs } from "expo-router";
 import { Image, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useTranslation } from "react-i18next";
 import { tabs } from "../../../constants/data";
 import { colors, components } from "../../../constants/theme";
 
@@ -9,6 +10,9 @@ const tabBar = components.tabBar;
 
 const TabLayout = () => {
   const insets = useSafeAreaInsets();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.resolvedLanguage?.startsWith("ar") ?? i18n.language.startsWith("ar");
+  const orderedTabs = isRTL ? [...tabs].reverse() : tabs;
 
   const TabIcon = ({ focused, icon }: TabIconProps) => {
     return (
@@ -34,6 +38,7 @@ const TabLayout = () => {
           backgroundColor: colors.primary,
           borderTopWidth: 0,
           elevation: 0,
+          flexDirection: isRTL ? "row-reverse" : "row",
         },
         tabBarItemStyle: {
           paddingVertical: tabBar.height / 2 - tabBar.iconFrame / 1.6,
@@ -45,12 +50,12 @@ const TabLayout = () => {
         },
       }}
     >
-      {tabs.map((tab) => (
+      {orderedTabs.map((tab) => (
         <Tabs.Screen
           key={tab.name}
           name={tab.name}
           options={{
-            title: tab.title,
+            title: t(tab.title),
             tabBarIcon: ({ focused }) => (
               <TabIcon focused={focused} icon={tab.icon} />
             ),
