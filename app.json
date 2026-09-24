@@ -29,10 +29,13 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#F7F1FA",
+          "image": "./assets/images/wiladati-splash.png",
+          "imageWidth": 300,
           "android": {
-            "image": "./assets/images/splash-icon.png",
-            "imageWidth": 76
+            "backgroundColor": "#F7F1FA",
+            "image": "./assets/images/wiladati-splash.png",
+            "imageWidth": 300
           }
         }
       ],
@@ -50,10 +53,23 @@
         }
       ],
       "@react-native-community/datetimepicker",
+      "@clerk/expo",
       [
         "expo-localization",
-        { "supportedLocales": { "ios": ["fr", "ar"], "android": ["fr", "ar"] } }
-      ]
+        {
+          "supportedLocales": {
+            "ios": [
+              "fr",
+              "ar"
+            ],
+            "android": [
+              "fr",
+              "ar"
+            ]
+          }
+        }
+      ],
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true,

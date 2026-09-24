@@ -1,19 +1,28 @@
 import images from "@/../constants/images";
 import "@/../global.css";
+import { useClerk, useUser } from "@clerk/expo";
 import DateTimePickerAndroid from "@react-native-community/datetimepicker";
 import { router } from "expo-router";
 import { styled } from "nativewind";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Image, Platform, Pressable, ScrollView, Text, View } from "react-native";
+import {
+  Image,
+  Platform,
+  Pressable,
+  ScrollView,
+  Text,
+  View,
+} from "react-native";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 import { icons } from "../../../constants/icons";
 import { useAppDirection } from "../../hooks/use-app-direction";
 import { useLanguage } from "../../hooks/use-language";
-
 const SafeAreaView = styled(RNSafeAreaView);
 
 export default function App() {
+  const { signOut } = useClerk();
+  const { user } = useUser();
   const { t } = useTranslation();
   const direction = useAppDirection();
   const { languageData } = useLanguage();
@@ -61,13 +70,16 @@ export default function App() {
 
   const selectedWeekIntro =
     countWeeks > 0 && countWeeks <= 42
-      ? (t(`weeks.${countWeeks}.intro`, { returnObjects: true }) as string[] | undefined) ?? []
+      ? ((t(`weeks.${countWeeks}.intro`, { returnObjects: true }) as
+          string[] | undefined) ?? [])
       : [];
 
-  const selectedWeekMetrics = countWeeks > 0 ? getSelectedWeekMetrics(countWeeks) : null;
+  const selectedWeekMetrics =
+    countWeeks > 0 ? getSelectedWeekMetrics(countWeeks) : null;
   const selectedWeekImage =
     countWeeks > 0
-      ? ((images as Record<string, unknown>)[`week${countWeeks}Img`] as any ?? images.week1Img)
+      ? (((images as Record<string, unknown>)[`week${countWeeks}Img`] as any) ??
+        images.week1Img)
       : images.week1Img;
 
   const toggleDatePicker = () => {
@@ -120,7 +132,7 @@ export default function App() {
     <SafeAreaView className="flex-1 bg-background">
       <ScrollView
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ padding: 20, paddingBottom: 36 }}
+        contentContainerStyle={{ padding: 20, paddingBottom: 85 }}
       >
         <View className="home-header" style={direction.row}>
           <View className="home-user" style={direction.row}>
@@ -129,12 +141,16 @@ export default function App() {
               className={`home-user-name ${languageData === "ar" ? "mr-2" : "ml-2"}`}
               style={direction.text}
             >
-              {t("welcomeUser")}
+              {user?.firstName || t("welcomeUser")}
             </Text>
           </View>
           <Pressable
             style={direction.row}
-            onPress={() => router.push("/onboarding")}
+            accessibilityLabel="Se déconnecter"
+            onPress={async () => {
+              await signOut();
+              router.replace("/(auth)/sign-in");
+            }}
           >
             <Image source={icons.logout} className="home-add-icon" />
           </Pressable>
@@ -145,17 +161,17 @@ export default function App() {
             <View className="mb-5 flex-row items-start justify-between">
               <View className="flex-1 pr-4">
                 <Text
-                  className="mb-1 text-xs font-sans-bold uppercase tracking-[1.5px] text-[#F7B267]"
-                  style={direction.text}
-                >
-                  {t("calendarTitle")}
-                </Text>
-                <Text
-                  className="text-2xl font-sans-bold text-white"
+                  className="mb-1 text-sm font-sans-bold uppercase tracking-[1.5px] text-[#F7B267]"
                   style={direction.text}
                 >
                   {t("calendarSubtitle")}
                 </Text>
+                {/* <Text
+                  className="text-2xl font-sans-bold text-white"
+                  style={direction.text}
+                >
+                  {t("calendarSubtitle")}
+                </Text> */}
               </View>
             </View>
 
@@ -199,7 +215,9 @@ export default function App() {
             className="flex-row border-t border-white/10 bg-primary px-6 py-5"
             style={direction.row}
           >
-            <View className="flex-1 border-r border-white/10 pr-4">
+            <View
+              className={`flex-1 border-white/10 ${languageData === "ar" ? "border-l  pl-4" : "border-r  pr-4"}`}
+            >
               <Text
                 className="mb-2 text-xs font-sans-semibold uppercase tracking-[1px] text-white/55"
                 style={direction.text}
@@ -222,7 +240,9 @@ export default function App() {
                 </Text>
               )}
             </View>
-            <View className="flex-1 pl-4">
+            <View
+              className={`flex-1 ${languageData === "ar" ? "pr-4" : "pl-4"}`}
+            >
               <Text
                 className="mb-2 text-xs font-sans-semibold uppercase tracking-[1px] text-white/55"
                 style={direction.text}
@@ -243,7 +263,7 @@ export default function App() {
           {countWeeks > 0 && countWeeks <= 42 ? (
             <View className="overflow-hidden rounded-[28px] border border-[#E8DEF6] bg-white shadow-sm shadow-black/5">
               <View className="bg-[#F5EEFF] px-4 py-4">
-                <View
+                {/* <View
                   className="mb-4 flex-row items-center justify-between"
                   style={direction.row}
                 >
@@ -259,12 +279,12 @@ export default function App() {
                   >
                     {t("weeksDays", { countWeeks, countDays })}
                   </Text>
-                </View>
+                </View> */}
 
                 <View className="items-center justify-center">
                   <Image
                     source={selectedWeekImage}
-                    className="h-40 w-40 rounded-full border-4 border-white bg-[#F3EBFF]"
+                    className="h-50 w-50 rounded-full border-4 border-white bg-[#F3EBFF]"
                     resizeMode="cover"
                   />
                 </View>

@@ -1,8 +1,41 @@
 import "@/../global.css";
+import { ClerkProvider, useAuth } from "@clerk/expo";
+import { tokenCache } from "@clerk/expo/token-cache";
 import { useFonts } from "expo-font";
-import { SplashScreen, Stack } from "expo-router";
+import { router, SplashScreen, Stack, useSegments } from "expo-router";
 import { useEffect, useState } from "react";
 import { loadSavedLanguage } from "../../lang/i18n";
+
+const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
+
+function AuthNavigation() {
+  const { isLoaded, isSignedIn } = useAuth();
+  const segments = useSegments();
+
+  useEffect(() => {
+    if (!isLoaded) return;
+
+    const firstSegment = segments[0];
+    const isAuthRoute = firstSegment === "(auth)";
+    const isPrivateRoute =
+      firstSegment === "(tabs)" || firstSegment === "(preparation)";
+
+    if (isSignedIn && (isAuthRoute || firstSegment === "onboarding")) {
+      router.replace("/(tabs)");
+    } else if (!isSignedIn && isPrivateRoute) {
+      router.replace("/(auth)/sign-in");
+    }
+  }, [isLoaded, isSignedIn, segments]);
+
+  return (
+    <Stack initialRouteName="onboarding">
+      <Stack.Screen name="onboarding" options={{ headerShown: false }} />
+      <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="(preparation)" options={{ headerShown: false }} />
+    </Stack>
+  );
+}
 
 export default function RootLayout() {
   const [languageLoaded, setLanguageLoaded] = useState(false);
@@ -25,14 +58,17 @@ export default function RootLayout() {
     }
   }, [fontsLoaded, languageLoaded]);
 
+  if (!publishableKey) {
+    throw new Error(
+      "Missing EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY. Add it to the project environment before starting the app.",
+    );
+  }
+
   if (!fontsLoaded || !languageLoaded) return null;
 
   return (
-    <Stack initialRouteName="onboarding">
-      <Stack.Screen name="onboarding" options={{ headerShown: false }} />
-      <Stack.Screen name="(auth)" options={{ headerShown: false }} />
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      <Stack.Screen name="(preparation)" options={{ headerShown: false }} />
-    </Stack>
+    <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
+      <AuthNavigation />
+    </ClerkProvider>
   );
 }

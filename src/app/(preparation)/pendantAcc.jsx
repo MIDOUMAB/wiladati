@@ -30,9 +30,9 @@ const pendantAcc = () => {
               resizeMode="contain"
               tintColor="#374151"
               className="w-5 h-5"
-              // style={
-              //   languageData === "ar" ? { transform: [{ scaleX: -1 }] } : {}
-              // }
+              style={
+                languageData === "ar" ? { transform: [{ scaleX: -1 }] } : {}
+              }
             />
           </Pressable>
           <Text
