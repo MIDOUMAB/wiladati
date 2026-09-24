@@ -27,12 +27,12 @@ export default function LanguageSelection() {
   const [isSaving, setIsSaving] = useState(false);
   const { isRTL, row: rowDirection, text: direction } = useAppDirection();
 
-  const selectLanguage = async (language: AppLanguage) => {
+  const selectLanguage = (language: AppLanguage) => {
     setIsSaving(true);
-    await setLanguage(language);
-    I18nManager.allowRTL(language === "ar");
-    I18nManager.forceRTL(language === "ar");
-    router.replace("/(tabs)");
+    void setLanguage(language)
+      .then(() => I18nManager.allowRTL(language === "ar"))
+      .catch(() => undefined);
+    router.replace("/(auth)/sign-in");
   };
 
   return (
