@@ -1,0 +1,112 @@
+# Keep these rules in sync with .gitignore.
+node_modules/
+.expo/
+/.expo-export-check/
+dist/
+web-build/
+expo-env.d.ts
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.DS_Store
+*.pem
+.env
+.env*.local
+*.tsbuildinfo
+app-example
+/android
+/ios
+
+# Local/private files are not required for an EAS build.
+/.git
+/.claude/
+/.vscode/
+/AGENTS.md
+/README.md
+/.env*
+
+# Assets with no static references in the app or Expo configuration.
+/assets/icons/logo.png
+/assets/icons/netflix.png
+/assets/images/adaptive-icon.png
+/assets/images/android-icon-background.png
+/assets/images/android-icon-foreground.png
+/assets/images/android-icon-monochrome.png
+/assets/images/ball-as.png
+/assets/images/expo-badge-white.png
+/assets/images/expo-badge.png
+/assets/images/expo-logo.png
+/assets/images/food.png
+/assets/images/icon.png
+/assets/images/la-peur.png
+/assets/images/massage.jpg
+/assets/images/partner.png
+/assets/images/partial-react-logo.png
+/assets/images/react-logo.png
+/assets/images/react-logo@2x.png
+/assets/images/react-logo@3x.png
+/assets/images/splash-icon.png
+/assets/images/tutorial-web.png
+/assets/images/buttonsImage/conseils pour le nourrisson.png
+/assets/images/buttonsImage/differentes positions pendat.png
+/assets/images/buttonsImage/dvlpmnt.jp
+/assets/images/buttonsImage/jpg
+/assets/images/buttonsImage/signeAppImg.png
+/assets/images/buttonsImage/signes d'urgence pour bebe.png
+/assets/images/buttonsImage/soins de cordon bebe.png
+/assets/images/buttonsImage/soins quotidiens bebe.png
+/assets/images/buttonsImage/weeks2Img.png
+/assets/images/tabIcons/explore.png
+/assets/images/tabIcons/explore@2x.png
+/assets/images/tabIcons/explore@3x.png
+/assets/images/tabIcons/home.png
+/assets/images/tabIcons/home@2x.png
+/assets/images/tabIcons/home@3x.png
+
+# Original images replaced by compressed copies in assets/optimized/.
+/assets/images/1.jpg
+/assets/images/3.jpg
+/assets/images/9.jpg
+/assets/images/10.jpg
+/assets/images/11.jpg
+/assets/images/12.jpg
+/assets/images/apres.png
+/assets/images/avant.png
+/assets/images/baby.jpg
+/assets/images/newbornbaby.png
+/assets/images/pendant.png
+/assets/images/week/semaine10.jpg
+/assets/images/week/semaine32.png
+/assets/images/week/semaine33.png
+/assets/images/buttonsImage/alimentation.png
+/assets/images/buttonsImage/la-peur.png
+/assets/images/buttonsImage/le-role-de-partenaire.png
+/assets/images/buttonsImage/marche-natation.png
+/assets/images/buttonsImage/massage-de-perinee.png
+/assets/images/buttonsImage/relaxation-et-respiration.png
+/assets/images/buttonsImage/sport-keigel.png
+/assets/images/buttonsImage/stimulateur-accouchement.png
+/assets/images/buttonsImage/cesarienne pendant.png
+/assets/images/buttonsImage/masssage et relaxation pendant.png
+/assets/images/buttonsImage/role des proches pndant.png
+/assets/images/buttonsImage/techhnique de poussée pendant.png
+/assets/images/buttonsImage/techniques de respiration pendant.png
+/assets/images/buttonsImage/alimentation apres l'accouch.png
+/assets/images/buttonsImage/allaitement maternel apres.png
+/assets/images/buttonsImage/bebe.png
+/assets/images/buttonsImage/hygiene personnele apres.png
+/assets/images/buttonsImage/medicaments apres.png
+/assets/images/buttonsImage/periode post partum apres.png
+/assets/images/buttonsImage/alimentationBebe.png
+/assets/images/buttonsImage/cordon.png
+/assets/images/buttonsImage/premierHeures.png
+/assets/images/buttonsImage/signesAlertes.png
+/assets/images/buttonsImage/soins.png

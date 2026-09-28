@@ -7,25 +7,41 @@ import { styled } from "nativewind";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
+  ActivityIndicator,
+  I18nManager,
   Image,
+  Modal,
   Platform,
   Pressable,
   ScrollView,
+  StyleSheet,
   Text,
   View,
 } from "react-native";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 import { icons } from "../../../constants/icons";
+import { setLanguage, type AppLanguage } from "../../../lang/i18n";
 import { useAppDirection } from "../../hooks/use-app-direction";
 import { useLanguage } from "../../hooks/use-language";
 const SafeAreaView = styled(RNSafeAreaView);
+const profileWomanImage = require("../../../assets/images/wiladati-profile-woman.png");
+
+const languageOptions: { code: AppLanguage; label: string }[] = [
+  { code: "fr", label: "Français" },
+  { code: "ar", label: "العربية" },
+];
 
 export default function App() {
   const { signOut } = useClerk();
   const { user } = useUser();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const direction = useAppDirection();
   const { languageData } = useLanguage();
+  const [showLanguagePicker, setShowLanguagePicker] = useState(false);
+  const [pendingLanguage, setPendingLanguage] = useState<AppLanguage | null>(
+    null,
+  );
+  const [languageChangeError, setLanguageChangeError] = useState("");
   const [showPicker, setShowPicker] = useState(false);
   const [date, setDate] = useState(new Date());
   const [dateOfBirth, setDateOfBirth] = useState<Date | undefined>();
@@ -128,6 +144,32 @@ export default function App() {
     }
   };
 
+  const changeLanguage = async (language: AppLanguage) => {
+    if (pendingLanguage) return;
+
+    if (i18n.resolvedLanguage === language) {
+      setShowLanguagePicker(false);
+      return;
+    }
+
+    setPendingLanguage(language);
+    setLanguageChangeError("");
+
+    try {
+      await setLanguage(language);
+      I18nManager.allowRTL(language === "ar");
+      setShowLanguagePicker(false);
+    } catch {
+      setLanguageChangeError(
+        language === "ar"
+          ? "تعذر تغيير اللغة. يرجى المحاولة مرة أخرى."
+          : "Impossible de changer la langue. Veuillez réessayer.",
+      );
+    } finally {
+      setPendingLanguage(null);
+    }
+  };
+
   return (
     <SafeAreaView className="flex-1 bg-background">
       <ScrollView
@@ -136,7 +178,13 @@ export default function App() {
       >
         <View className="home-header" style={direction.row}>
           <View className="home-user" style={direction.row}>
-            <Image source={images.avatar} className="home-avatar" />
+            <View className="home-avatar">
+              <Image
+                source={profileWomanImage}
+                style={styles.profileAvatarImage}
+                resizeMode="contain"
+              />
+            </View>
             <Text
               className={`home-user-name ${languageData === "ar" ? "mr-2" : "ml-2"}`}
               style={direction.text}
@@ -144,16 +192,52 @@ export default function App() {
               {user?.firstName || t("welcomeUser")}
             </Text>
           </View>
-          <Pressable
-            style={direction.row}
-            accessibilityLabel="Se déconnecter"
-            onPress={async () => {
-              await signOut();
-              router.replace("/(auth)/sign-in");
-            }}
+          <View
+            style={(styles.headerActions, direction.row)}
+            className="gap-x-2"
           >
-            <Image source={icons.logout} className="home-add-icon" />
-          </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={
+                languageData === "ar" ? "تغيير اللغة" : "Changer de langue"
+              }
+              onPress={() => {
+                setLanguageChangeError("");
+                setShowLanguagePicker(true);
+              }}
+              style={({ pressed }) => [
+                styles.languageButton,
+                pressed && styles.actionPressed,
+              ]}
+            >
+              <Text style={styles.languageGlyph}>文</Text>
+              <Text style={styles.languageCode}>
+                {languageData === "ar" ? "AR" : "FR"}
+              </Text>
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={
+                languageData === "ar" ? "تسجيل الخروج" : "Se déconnecter"
+              }
+              onPress={async () => {
+                await signOut();
+                router.replace("/sign-in");
+              }}
+              style={({ pressed }) => [
+                styles.logoutButton,
+                pressed && styles.actionPressed,
+              ]}
+            >
+              <Image
+                source={icons.logout}
+                style={[
+                  styles.logoutIcon,
+                  languageData === "ar" ? { transform: [{ scaleX: -1 }] } : {},
+                ]}
+              />
+            </Pressable>
+          </View>
         </View>
 
         <View className="overflow-hidden rounded-[28px] bg-foreground shadow-lg shadow-foreground/25">
@@ -365,6 +449,183 @@ export default function App() {
           )}
         </View>
       </ScrollView>
+      <Modal
+        visible={showLanguagePicker}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setShowLanguagePicker(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <Pressable
+            accessibilityLabel={languageData === "ar" ? "إغلاق" : "Fermer"}
+            onPress={() => setShowLanguagePicker(false)}
+            style={StyleSheet.absoluteFill}
+          />
+          <View style={styles.languageDialog}>
+            <Text style={styles.dialogTitle}>
+              {languageData === "ar"
+                ? "اختاري لغتك"
+                : "Choisissez votre langue"}
+            </Text>
+            {languageOptions.map((language) => {
+              const isSelected = languageData === language.code;
+
+              return (
+                <Pressable
+                  key={language.code}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: isSelected }}
+                  disabled={pendingLanguage !== null}
+                  onPress={() => changeLanguage(language.code)}
+                  style={({ pressed }) => [
+                    styles.languageOption,
+                    isSelected && styles.selectedLanguageOption,
+                    pressed && styles.actionPressed,
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.optionCode,
+                      language.code === "ar" && styles.arabicOptionCode,
+                    ]}
+                  >
+                    {language.code.toUpperCase()}
+                  </Text>
+                  <Text style={styles.optionLabel}>{language.label}</Text>
+                  {pendingLanguage === language.code ? (
+                    <ActivityIndicator color="#6A0DAD" />
+                  ) : isSelected ? (
+                    <Text style={styles.selectedMark}>✓</Text>
+                  ) : null}
+                </Pressable>
+              );
+            })}
+            {languageChangeError ? (
+              <Text accessibilityRole="alert" style={styles.languageError}>
+                {languageChangeError}
+              </Text>
+            ) : null}
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  headerActions: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  profileAvatarImage: {
+    width: 52,
+    height: 52,
+  },
+  languageButton: {
+    minWidth: 54,
+    height: 46,
+    paddingHorizontal: 9,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 4,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: "#E9E1F3",
+    backgroundColor: "#FFFFFF",
+  },
+  languageGlyph: {
+    color: "#6A0DAD",
+    fontSize: 19,
+    fontFamily: "sans-bold",
+  },
+  languageCode: {
+    color: "#514365",
+    fontSize: 11,
+    fontFamily: "sans-extrabold",
+  },
+  logoutButton: {
+    width: 46,
+    height: 46,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: "#F3DED9",
+    backgroundColor: "#FFF8F6",
+  },
+  logoutIcon: { width: 22, height: 22, resizeMode: "contain" },
+  actionPressed: { opacity: 0.72, transform: [{ scale: 0.97 }] },
+  modalOverlay: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 24,
+    backgroundColor: "rgba(24, 12, 40, 0.45)",
+  },
+  languageDialog: {
+    width: "100%",
+    maxWidth: 380,
+    gap: 12,
+    padding: 22,
+    borderRadius: 26,
+    backgroundColor: "#FFFFFF",
+    shadowColor: "#210255",
+    shadowOpacity: 0.18,
+    shadowRadius: 24,
+    shadowOffset: { width: 0, height: 12 },
+    elevation: 12,
+  },
+  dialogTitle: {
+    marginBottom: 4,
+    color: "#210255",
+    fontSize: 21,
+    fontFamily: "sans-extrabold",
+  },
+  languageOption: {
+    minHeight: 64,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 13,
+    paddingHorizontal: 13,
+    borderWidth: 1,
+    borderColor: "#E9E3F0",
+    borderRadius: 18,
+    backgroundColor: "#FFFFFF",
+  },
+  selectedLanguageOption: {
+    borderColor: "#BDA5E3",
+    backgroundColor: "#F9F5FF",
+  },
+  optionCode: {
+    width: 38,
+    height: 38,
+    overflow: "hidden",
+    borderRadius: 13,
+    backgroundColor: "#EAF0FF",
+    color: "#37265A",
+    textAlign: "center",
+    textAlignVertical: "center",
+    fontSize: 12,
+    fontFamily: "sans-extrabold",
+    lineHeight: 38,
+  },
+  arabicOptionCode: { backgroundColor: "#FBE9D7" },
+  optionLabel: {
+    flex: 1,
+    color: "#261D35",
+    fontSize: 16,
+    fontFamily: "sans-bold",
+  },
+  selectedMark: {
+    color: "#6A0DAD",
+    fontSize: 20,
+    fontFamily: "sans-bold",
+  },
+  languageError: {
+    color: "#B42318",
+    fontSize: 14,
+    lineHeight: 20,
+    fontFamily: "sans-medium",
+  },
+});
